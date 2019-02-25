@@ -1,0 +1,3 @@
+/home/john/virus_checking_linux_client/src_refactoring/file_monitor_sdk/build/CMakeFiles/rebuild_cache.dir
+/home/john/virus_checking_linux_client/src_refactoring/file_monitor_sdk/build/CMakeFiles/edit_cache.dir
+/home/john/virus_checking_linux_client/src_refactoring/file_monitor_sdk/build/CMakeFiles/file_monitor_sdk.dir

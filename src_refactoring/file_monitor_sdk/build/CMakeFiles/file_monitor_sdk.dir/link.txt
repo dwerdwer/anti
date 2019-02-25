@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fvisibility=hidden -g -fPIC -Wall  -shared -Wl,-soname,libfile_monitor_sdk.so -o libfile_monitor_sdk.so CMakeFiles/file_monitor_sdk.dir/src/file_system_monitor.cpp.o CMakeFiles/file_monitor_sdk.dir/src/module_file_monitor_impl.cpp.o CMakeFiles/file_monitor_sdk.dir/src/stap_file_monitor.c.o CMakeFiles/file_monitor_sdk.dir/src/util-string.c.o -lpthread 

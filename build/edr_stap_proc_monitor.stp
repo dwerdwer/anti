@@ -1,0 +1,23 @@
+#!/usr/bin/stap
+#
+# This is a stap script to monitor process creations (fork(), exec()'s).
+# Based on stap script found: http://picobot.org/wordpress/?p=27
+# With some minor modifications (i.e. timestamping)
+# 
+# Usage: stap forktracker.stp
+#
+# Sample output:
+#
+# timestamp: process_name (pid) new_pid
+#
+# Version 0.1
+
+probe process.end {
+  printf("0 %10d %10d %10d\n",
+         gettimeofday_s(), ppid(), pid())
+}
+
+probe process.begin {
+  printf("1 %10d %10d %10d\n",
+         gettimeofday_s(), ppid(), pid())
+}

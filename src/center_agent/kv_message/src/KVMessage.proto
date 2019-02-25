@@ -1,0 +1,394 @@
+
+//
+// KV消息定义
+//
+// 注意：从第一个版本正式发布开始，各个序号值/枚举值不可改变，可以增加、废弃
+//
+
+// 指定语法规则 proto2 or proto3
+syntax = "proto3";
+
+// 包名/命名空间
+package KVMessage;
+
+option optimize_for = LITE_RUNTIME;
+
+///////////////////////////////////////////////////////////////////////
+//
+// 命令Id，可扩充
+//
+enum CmdID {
+    CMD_ECHO			= 0;	// 测试命令
+	CMD_HEART_BEAT	= 1;	// 心跳包，目前限定一次服务器仅仅返回一条信息
+	CMD_INSTALL		= 2;	// 产品安装、卸载
+	CMD_LOGIN			= 3;	// 用户登录命令组，包括登录、登出、注册、取消注册等子命令
+	CMD_REPORT			= 4;	// 用户报告信息命令组
+	CMD_COMMON_REPORT  = 5;	// 通用信息上报
+
+	CMD_CENTER			= 10;	// 子控制中心/子数据中心与上级之间通信命令组
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 子命令Id，可扩充
+// 每个子命令Id均从属于某个命令Id，Id值从0开始
+//
+enum SubCmdID {
+	option allow_alias = true;
+
+	SUBCMD_STUB = 0;
+	
+	//=================================================================
+	// CMD_HEART_BEAT
+	//
+	SUBCMD_QUERY_TASK	= 0;		// 心跳包，查询待办任务
+
+	//=================================================================
+	// CMD_INSTALL
+	//
+    SUBCMD_INSTALL    = 0;      // 产品安装
+    SUBCMD_UNINSTALL  = 1;      // 产品卸载
+
+	//=================================================================
+	// CMD_LOGIN
+	//
+	SUBCMD_LOGIN      = 0;	 // 登录
+	SUBCMD_LOGOUT	    = 1;	// 登出
+	SUBCMD_REGISTER	= 2;	// 注册
+	SUBCMD_UNREGISTER= 3;		// 反注册
+
+
+	//=================================================================
+	// CMD_REPORT
+	// 
+	SUBCMD_HARDWARE	= 1;	// 报告硬件信息
+	SUBCMD_SOFTWARE	= 2;	// 报告系统软件信息
+	SUBCMD_VERSION	= 3;	// 报告产品信息 - 版本
+	SUBCMD_VIRUS		= 4;	// 报告发现病毒
+	SUBCMD_COMPONENT	= 5;	// 报告产品组件
+	SUBCMD_TASKPROCEED	= 6;	// 报告任务开始执行与结束执行
+
+	//=================================================================
+	// CMD_COMMON_REPORT
+	//
+	SUBCMD_COMMON_REPORT	= 1;	// 报告
+
+	//=================================================================
+	// CMD_CENTER
+	// 
+
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 回应中的INFO 码，可扩充
+//
+enum InfoCode {
+    //=================================================================
+    //
+    //
+    INFO_OK = 0;                    // 默认值
+
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 错误码，可扩充
+//
+enum ErrorCode {
+	//=================================================================
+	// 
+	// 
+	ERR_OK				= 0;	// 命令成功
+	ERR_UNSUPPORT		= 1;	// 不能识别的命令,新扩充的CmdId/SubCmdId
+	ERR_NEED_LOGIN    = 2;	// 尚未登录或Token 无效，需要重新登录
+
+	ERR_UNDEFINE		= 10;	// 未定义错误，可以作为通用错误码
+	ERR_BAD_ARG		= 11;	// 请求参数错误
+	ERR_BAD_DATA		= 12;	// 请求数据错误
+	ERR_DB_FAIL		= 13;	// 数据库操作错误
+
+
+	ERR_NOT_REGISTER	= 20;	// 用户尚未注册
+	ERR_NO_LIC			= 21;	// 控制中心授权不足
+	ERR_BANNED_INST	= 22;	// 禁止安装，受安装策略限制
+	ERR_NOTCONN_PARENT = 23;	// 子控制中心无法连上上级控制中心获取授权
+
+	//=================================================================
+	// 
+	// 
+
+	//=================================================================
+	// 
+	// 
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 键值对Key定义，可扩充
+//
+// KeyId 0-2 是通用特殊KeyId，
+// 每个自定义Key均从属于某个命令Id，Key值从3开始
+
+enum KeyCode {
+	option allow_alias = true;  
+	
+    //=================================================================
+	// 请求/回应消息 - 通用定义
+	KEY_TOKEN   		= 0;		// 用户标识     // Int 类型
+
+    //=================================================================
+	// 请求消息 - 通用定义
+
+	//=================================================================
+	// 服务器回应消息 - 通用定义
+	RESPKEY_TASK		= 1;	// 需要后续处理的任务
+
+
+	//=================================================================
+	//
+	//  CMD_LOGIN
+	//
+	KEY_NODEID			= 3;		// 用户ID     // String 类型
+	KEY_PRODUCTID		= 4;		// 产品标识     // Int 类型
+	KEY_PRODUCTTYPE	    = 5;	// 产品类型
+	KEY_PRODUCTRUNMODE	= 6;	// 产品运行模式
+	KEY_PRODUCTVERSION	= 7;	// 产品版本
+	KEY_PRODUCTVERSION2	= 8;	// 产品版本2，如病毒库版本
+	KEY_PRODUCTOS			= 9;	// 产品平台
+
+	KEY_MACHINENAME		= 10;	// 机器名
+	KEY_IPADDR      		= 11;	// 本地IP地址，可能多个
+
+	//=================================================================
+	//
+	//  CMD_HEART_BEAT
+	//
+	KEY_RUNSTATUS		= 3;		// 运行模式 		// Int // 详见 STATUS_XXX 定义
+	KEY_TASKID			= 4;		// 任务Id 			// Int
+	KEY_TASKRESULT	= 5;		// 任务完成结果		// Int
+	KEY_TASK_CMD		= 6;		// 任务Cmd			//  String
+	KEY_TASK_PARAMS	= 7;		// 任务参数			//  JSon String
+
+	KEY_OP				= 10;		// 下载文件后处理模式	// Int，详见 DOP_XXX 定义
+
+	KEY_COMPONENT		= 100;		// 组件列表			// String
+	KEY_SCANOBJECT	= 101;		// 扫描目标
+	KEY_URL			= 102;		// URL
+	KEY_STOREPATH		= 103;		// 存贮路径
+	KEY_FILEPATH		= 104;		// 文件路径
+	KEY_ARGS			= 105;		// 运行文件参数
+	KEY_MODEL			= 106;		// 运行方式
+
+
+
+	//=================================================================
+	// 
+	//  CMD_REPORT / SUBCMD_HARDWARE
+	//
+	KEY_CPU			= 3;	//
+	KEY_MAC_ADDR		= 4;	// 网卡MAC，可以有多个
+
+	//=================================================================
+	// 
+	//  CMD_REPORT / SUBCMD_SOFTWARE
+	// 
+	KEY_SOFT			= 3;	// 已安装软件，可以有多个
+
+	//=================================================================
+	//
+	//  CMD_REPORT / SUBCMD_VIRUS
+	//
+	KEY_VIRUSOP			= 3;	// 病毒处理结果,VirudOP
+	KEY_VIRUSFINDBY		= 4;	// 病毒来源
+	KEY_SAMPSIZE			= 5;	// 病毒大小
+	KEY_SAMPTIME			= 6;	// 样本文件时间
+	KEY_FINDTIME			= 7;	// 发现病毒时间
+	KEY_VIRUSNAME			= 8;	//
+	KEY_SAMPMD5			= 9;
+	KEY_SAMPSHA1			= 10;
+
+	//=================================================================
+	//
+	//  CMD_REPORT / SUBCMD_TASKPROCEED
+	//
+	// KEY_TASKID			= 4;	// 任务Id，前面已有定义
+	KEY_TASKPROCEED		= 5;	// 任务执行进度, VALUE_XXX
+
+	//=================================================================
+	//  CMD_COMMON_REPORT
+	//
+	KEY_REPORT_TYPE 		= 4;
+	KEY_REPORT_ACTION 	= 5;
+	KEY_REPORT_INFO		= 6;
+
+
+	//=================================================================
+	// 
+	// 
+
+	//=================================================================
+	// 
+	// 
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 运行状态定义，按位定义
+//
+enum RunStatus {
+	STATUS_NONE		= 0;		// 占位，不使用
+
+	STATUS_SCAN		= 0x0001;	// 查毒扫描中
+	STATUS_FILEMON	= 0x0002;	// 文件监控开启
+	STATUS_FIREWALL	= 0x0004;	// 防火墙开启
+	STATUS_HIPS		= 0x0008;	// 主动防御开启
+	STATUS_UPDATE		= 0x0010;	// 升级中
+	STATUS_REPAIRLEAK	= 0x0020;	// 补丁修复中
+	STATUS_STUDYMODEL	= 0x0040;	//  学习模式（专网）
+	STATUS_WORKMODEL 	= 0x0080;	// 	工作模式
+	STATUS_DENYMODEL 	= 0x0100;	// 	禁用模式
+
+}
+
+// 节点标志
+enum RunFlag {
+	RF_NONE		= 0;			// 占位，不使用
+	RF_ONLINE		= 0x0001;	// 用户在线
+	RF_FINDVIRUS 	= 0x0002;	// 发现病毒
+	RF_LICENSE 	= 0x0004;	// 授权有效
+}
+
+
+///////////////////////////////////////////////////////////////////////
+//
+//  发现病毒来源
+//
+enum FindByMode {
+	FROM_SCAN			= 0;	// 客户端扫描
+	FROM_FILEMONITOR 	= 1;	// 客户端文件监控
+	FROM_WEBMONITOR 	= 2;	// 网页监控
+	FROM_ONLINESCAN	= 3;	// 在线扫描
+	FROM_UDISKSCAN	= 4;	// U盘杀毒
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+//  病毒处理结果
+//
+enum VirudOP {
+	OP_FIND			= 0;	// 扫描发现病毒
+	OP_DELETED		 	= 1;	// 病毒文件已删除
+	OP_CURED		 	= 2;	// 病毒已清除
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 文件下载后操作定义
+//
+enum DownloadOpCode {
+	DOP_NONE		= 0;		// 不操作
+	DOP_RUN		= 1;		// 运行之
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 任务命令定义
+//
+// enum TaskCmd {
+// 	TASK_NONE  		= 0;	// 占位，不使用
+// 	TASK_UPDATE		= 1;	// 	按文件检查更新升级
+// 	TASK_UPDATEVLIB	= 2;	// 	升级病毒库
+// 	TASK_UPDATESOFT	= 3;	//  数据String	KEY_COMPONENT 组件列表	组件更新
+// 	TASK_SCAN			= 4;	// 	数据String	KEY_SCANOBJECT 扫描目标	扫描病毒
+
+// 	TASK_REPORTVERSION	= 5;	// 	上报产品版本信息
+// 	TASK_REPORTCOMPONENT	= 6;	// 	报告安装组件列表
+// 	TASK_REPORTHARDWARE	= 7;	// 报告硬件信息
+// 	TASK_REPORTSOFTWARE	= 8;	// 报告系统安装软件信息
+
+// 	TASK_REBOOT		= 10;	// 	重启
+// 	TASK_SHUTDOWN		= 11;	// 	关机
+// 	TASK_DOWNLOAD		= 12;	//  数据String	KEY_URL 下载URL
+// 	TASK_RUN			= 13;	// 	数据String	KEY_FILEPATH 文件路径
+// 	TASK_DISCONNECT	= 14;	//  断开网络
+// }
+
+///////////////////////////////////////////////////////////////////////
+//
+// 任务完成结果
+//
+enum TaskResult {
+    //=================================================================
+    //
+    //
+    VALUE_NOTASK = 0;         // 无任务
+	VALUE_SUCCESS = 1;        // 成功完成
+	VALUE_NEEDNOT = 2;        // 该任务本节点不能支持
+	VALUE_UNSUPPORT = 3;      // 不能识别的任务
+	VALUE_ERROR   = 4;        // 失败
+
+	// CMD_REPORT / SUBCMD_TASKPROCEED
+	VALUE_START	= 10;		// 开始执行任务
+	VALUE_PROCEED = 11;		// 任务执行中
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 键值对-数据结构
+//
+// 键-字符值对结构定义
+message StringValue {
+	int32  key		= 1;	// 键Id
+	string value	= 2;	// 字符串值
+}
+
+// 键-整数值结构定义
+message IntValue {
+	int32  key		= 1;	// 键Id
+	int32  value	= 2;	// 数值
+}
+
+// 键-二进制值结构定义
+message BinValue {
+	int32  key		= 1;	// 键Id
+	bytes  value	= 2;	// 二进制值
+}
+
+// 字符串键-字符串值结构定义
+message StringPair {
+	string  key	= 1;	// 字符串键
+	string  value	= 2;	// 字符串值
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 服务器回应消息
+//
+message ResponseMessage{
+	int32  error	= 1; 	// 错误码，ERR_OK=0表示成功，其他为错误代码
+	int32  info		= 2;	// 返回附件数据，根据具体Cmd而定，返回特定数值
+
+	repeated StringValue strvals = 10;	// 回应结果键值对 - 字符串
+	repeated IntValue    intvals = 11;	// 回应结果键值对 - 数值
+	repeated BinValue    binvals = 12;	// 回应结果键值对 - 二进制值
+	repeated StringPair  strpairs= 13;	// 回应结果键值对 - 字符串键/字符串值
+}
+
+///////////////////////////////////////////////////////////////////////
+//
+// 客户端请求消息
+//
+message RequestMessage{
+	fixed32 msgno	= 1;		// 消息序号
+	int32  version	= 2; 		// 消息版本号，目前为1
+    int32  cmd		= 3;		// 命令Id
+    int32  subcmd	= 4;		// 子命令Id，缺省为0
+	string id		= 5;		// 客户端Id
+	fixed32 token	= 6;		// 会话 token
+
+	repeated StringValue strvals = 10;	// 请求数据键值对 - 字符串
+	repeated IntValue    intvals = 11;	// 请求数据键值对 - 数值
+	repeated BinValue    binvals = 12;	// 请求数据键值对 - 二进制值
+	repeated StringPair  strpairs= 13;	// 请求数据键值对 - 字符串键/字符串值
+}

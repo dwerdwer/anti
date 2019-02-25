@@ -1,0 +1,42 @@
+#include <map>
+#include <string>
+
+#include <unistd.h>
+#include <sys/sysinfo.h>
+
+#include "statiser_proc.h"
+#include "readproc.h"
+
+static time_t get_sys_boot_timestamp()
+{
+    struct sysinfo sys_info;
+    if(sysinfo(&sys_info))  return 0;
+    time_t boot_time = time(NULL) - (time_t)sys_info.uptime;
+    return boot_time;
+}
+
+proc_record::proc_record()
+{
+    boot_time = get_sys_boot_timestamp();
+    clock_ticks = sysconf(_SC_CLK_TCK);
+}
+
+void proc_record::update(PSCtx *ctx)
+{
+    if(!ctx || !ctx->procs_head.procs)
+        return ;
+    Proc **ps = ctx->procs_head.procs;
+    for(int i=0, total=ctx->procs_head.used; i<total; i++) {
+        if(PROC_STATE_START == ps[i]->comparing_state) {
+            const char *name = ps[i]->abs_name.size() ? ps[i]->abs_name.c_str() : ps[i]->cmd;
+            procs[ps[i]->pid] = simple_proc(ps[i]->pid, name, boot_time+ps[i]->start_time/clock_ticks, 0);
+            // printf("[%s] %d %s start %llu\n", __func__, (int)ps[i]->pid, procs[ps[i]->pid].name.c_str(), procs[ps[i]->pid].starttime);
+        }
+        else if(PROC_STATE_CLOSED == ps[i]->comparing_state) {
+            procs[ps[i]->pid].endtime = ps[i]->stoptime;
+            // printf("[%s] %d %s end %llu\n", __func__, (int)ps[i]->pid, procs[ps[i]->pid].name.c_str(), procs[ps[i]->pid].endtime);
+        }
+    }
+    // printf("[%s] history size %lu\n", __func__, procs.size());
+}
+

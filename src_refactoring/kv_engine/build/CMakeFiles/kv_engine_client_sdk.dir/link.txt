@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -Wl,-rpath,./ -g -Wall -fPIC -L../../../lib  -shared -Wl,-soname,libkv_engine_client_sdk.so -o libkv_engine_client_sdk.so CMakeFiles/kv_engine_client_sdk.dir/src/kv_engine.cpp.o -lpthread -lrpc_client 

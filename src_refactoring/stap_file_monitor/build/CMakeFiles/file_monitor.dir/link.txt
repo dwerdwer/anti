@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fvisibility=hidden -DDEBUG -g -fPIC -std=c++11 -Wall -Wno-unused-function -L../../../lib  -shared -Wl,-soname,libfile_monitor.so -o libfile_monitor.so CMakeFiles/file_monitor.dir/src/common_utils.cpp.o CMakeFiles/file_monitor.dir/src/interface_monitor.cpp.o -lmodule_data -lpthread -lfile_monitor_sdk -ljsoncpp 

@@ -1,0 +1,3 @@
+/home/john/virus_checking_linux_client/src_refactoring/rpcsrv/build/CMakeFiles/rebuild_cache.dir
+/home/john/virus_checking_linux_client/src_refactoring/rpcsrv/build/CMakeFiles/edit_cache.dir
+/home/john/virus_checking_linux_client/src_refactoring/rpcsrv/build/CMakeFiles/rpcsrv.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -DDEBUG -g -fvisibility=hidden -Wall -fPIC -Wno-unused -L../../../lib  -shared -Wl,-soname,libupgrade_plugin.so -o libupgrade_plugin.so CMakeFiles/upgrade_plugin.dir/src/upgrade_interface.cpp.o CMakeFiles/upgrade_plugin.dir/src/upgrade_logger.cpp.o CMakeFiles/upgrade_plugin.dir/src/version_manager.cpp.o -lmodule_data 

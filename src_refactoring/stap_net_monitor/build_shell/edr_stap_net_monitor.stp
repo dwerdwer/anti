@@ -1,0 +1,60 @@
+#!/usr/bin/stap
+
+# Print a trace of threads sending IP packets (UDP or TCP) to a given
+# destination port and/or address.  Default is unfiltered.
+
+// global the_dport = 0    # override with -G the_dport=53
+// global the_daddr = ""   # override with -G the_daddr=127.0.0.1
+//
+// probe netfilter.ip.local_out {
+//     if ((the_dport == 0 || the_dport == dport) &&
+//         (the_daddr == "" || the_daddr == daddr))
+// 	    printf("%10s[%5d] sent packet %15s:%5d to %15s:%5d\n", execname(), tid(), saddr, sport, daddr, dport)
+// }
+
+probe netfilter.ip.local_out {
+    if ((pf == "ipv4") && (family == 2) &&
+    (dport == 53 || dport == 80))
+        printf("%10d %5d %5d %15s %5d %15s %5d\n",
+		gettimeofday_s(), ppid(), pid(), saddr, sport, daddr, dport)
+}
+
+probe tcp.sendmsg.return {
+    sk = @defined(@entry($sk)) ? @entry($sk) : @entry($sock->sk);
+    if ( size <= 0 ) next;
+    if ( !sk ) next;
+    laddr = tcpmib_local_addr(sk)
+        lport = tcpmib_local_port(sk)
+        raddr = tcpmib_remote_addr(sk)
+        rport = tcpmib_remote_port(sk)
+
+        if (53 == rport || 80 == rport || 22 == lport)
+        {
+            printf("TCP %10d %5d %5d %15s %5d %15s %5d\n",
+                    gettimeofday_s(), ppid(), pid(), ip_ntop(htonl(laddr)), lport, ip_ntop(htonl(raddr)), rport)
+        }
+}
+
+probe udp.sendmsg.return {
+    if (53 == dport)
+    {
+        printf("UDP %10d %5d %5d %15s %5d %15s %5d\n",
+                gettimeofday_s(), ppid(), pid(), saddr, sport, daddr, dport)
+    }
+}
+
+probe kernel.function("ip_output").return
+{
+    if ($return == 0 && @entry($sk->sk_protocol) == @const("IPPROTO_ICMP"))
+    {
+        head = @entry($skb->head);
+        network_header = @entry($skb->network_header);
+        iphdr = head + network_header;
+        saddr = @cast(iphdr, "iphdr")->saddr;
+        daddr = @cast(iphdr, "iphdr")->daddr;
+        printf("ICMP %10d %5d %5d %15s %15s\n",
+                gettimeofday_s(), ppid(), pid(),
+                ip_ntop(saddr), ip_ntop(daddr)
+              )
+    }
+}

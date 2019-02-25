@@ -1,0 +1,4 @@
+/home/john/virus_checking_linux_client/src/center_agent/center_agent/build/CMakeFiles/edit_cache.dir
+/home/john/virus_checking_linux_client/src/center_agent/center_agent/build/CMakeFiles/center_agent.dir
+/home/john/virus_checking_linux_client/src/center_agent/center_agent/build/CMakeFiles/rebuild_cache.dir
+/home/john/virus_checking_linux_client/src/center_agent/center_agent/build/CMakeFiles/kv_message.dir

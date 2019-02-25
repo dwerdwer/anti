@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/zhangrui/.cache/gnome-builder/install/av_sdk/host
+app-id=
+postbuild=
+prebuild=
+default=true

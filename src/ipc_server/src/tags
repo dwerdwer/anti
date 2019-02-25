@@ -1,0 +1,592 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddRef	ipc_server.cpp	/^    virtual void    AddRef()$/;"	f	class:ipc_connection_t
+BUFFER_BLOCK_SIZE	back/libwebsockets_server_eventloop.c	/^    BUFFER_BLOCK_SIZE = 4096,$/;"	e	enum:__anon2	file:
+BUFFER_BLOCK_SIZE	libwebsockets_server_eventloop.c	/^    BUFFER_BLOCK_SIZE = 4096,$/;"	e	enum:__anon1	file:
+Close	ipc_server.cpp	/^    void Close()$/;"	f	class:ipc_connection_t
+DEMO_PROTOCOL_COUNT	back/server_http.c	/^	DEMO_PROTOCOL_COUNT$/;"	e	enum:demo_protocols	file:
+DEMO_PROTOCOL_COUNT	server_http.c	/^	DEMO_PROTOCOL_COUNT$/;"	e	enum:demo_protocols	file:
+EPN_FILE	back/server_http.c	/^	EPN_FILE,$/;"	e	enum:enum_param_names	file:
+EPN_FILE	server_http.c	/^	EPN_FILE,$/;"	e	enum:enum_param_names	file:
+EPN_SEND	back/server_http.c	/^	EPN_SEND,$/;"	e	enum:enum_param_names	file:
+EPN_SEND	server_http.c	/^	EPN_SEND,$/;"	e	enum:enum_param_names	file:
+EPN_TEXT	back/server_http.c	/^	EPN_TEXT,$/;"	e	enum:enum_param_names	file:
+EPN_TEXT	server_http.c	/^	EPN_TEXT,$/;"	e	enum:enum_param_names	file:
+EPN_UPLOAD	back/server_http.c	/^	EPN_UPLOAD,$/;"	e	enum:enum_param_names	file:
+EPN_UPLOAD	server_http.c	/^	EPN_UPLOAD,$/;"	e	enum:enum_param_names	file:
+GetInstParam	ipc_server.cpp	/^    virtual void* GetInstParam(int index )$/;"	f	class:ipc_connection_t
+IN	back/ipc_server.h	9;"	d
+IN	back/libwebsockets_server_module_defines.h	32;"	d
+IN	ipc_server.h	9;"	d
+IN	libwebsockets_server_module_defines.h	32;"	d
+INNER_RECEIVE_BUFFER_SIZE	back/libwebsockets_server_eventloop.c	/^    INNER_RECEIVE_BUFFER_SIZE = 4096,$/;"	e	enum:__anon2	file:
+INNER_RECEIVE_BUFFER_SIZE	libwebsockets_server_eventloop.c	/^    INNER_RECEIVE_BUFFER_SIZE = 4096,$/;"	e	enum:__anon1	file:
+IRpcConnection	ipc_server.h	/^class IRpcConnection$/;"	c
+IRpcServer	ipc_server.h	/^class IRpcServer$/;"	c
+LIBWEBSOCKETS_SERVER_EVENTLOOP_HHH	back/libwebsockets_server_eventloop.h	2;"	d
+LIBWEBSOCKETS_SERVER_EVENTLOOP_HHH	libwebsockets_server_eventloop.h	2;"	d
+LIBWEBSOCKETS_SERVER_MODULE_DEFINES_HHH	back/libwebsockets_server_module_defines.h	2;"	d
+LIBWEBSOCKETS_SERVER_MODULE_DEFINES_HHH	libwebsockets_server_module_defines.h	2;"	d
+LOCAL_RESOURCE_PATH	back/libwebsockets_server_eventloop.c	45;"	d	file:
+LOCAL_RESOURCE_PATH	libwebsockets_server_eventloop.c	45;"	d	file:
+MAX_INSTPARAMS	ipc_server.h	17;"	d
+NONE	back/libwebsockets_server_eventloop.c	/^    NONE = 0,$/;"	e	enum:__anon2	file:
+NONE	libwebsockets_server_eventloop.c	/^    NONE = 0,$/;"	e	enum:__anon1	file:
+OUT	back/ipc_server.h	12;"	d
+OUT	back/libwebsockets_server_module_defines.h	33;"	d
+OUT	ipc_server.h	12;"	d
+OUT	libwebsockets_server_module_defines.h	33;"	d
+OnClose	ipc_server.cpp	/^    virtual void OnClose()$/;"	f	class:ipc_connection_t
+OnConnect	ipc_server.cpp	/^	virtual void OnConnect()$/;"	f	class:ipc_connection_t
+OnReceive	ipc_server.cpp	/^    void        OnReceive(const char* p_input_data, uint32_t input_data_len)$/;"	f	class:ipc_connection_t
+PING_PONG_INTERVAL	back/libwebsockets_server_eventloop.c	/^    PING_PONG_INTERVAL = 0, \/\/60,    \/\/ seconds$/;"	e	enum:__anon2	file:
+PING_PONG_INTERVAL	libwebsockets_server_eventloop.c	/^    PING_PONG_INTERVAL = 0, \/\/60,    \/\/ seconds$/;"	e	enum:__anon1	file:
+PROTOCOL_DUMB_INCREMENT	back/server_http.c	/^	PROTOCOL_DUMB_INCREMENT,$/;"	e	enum:demo_protocols	file:
+PROTOCOL_DUMB_INCREMENT	server_http.c	/^	PROTOCOL_DUMB_INCREMENT,$/;"	e	enum:demo_protocols	file:
+PROTOCOL_GROUP_BASED_ON_RAW_SOCKET	back/libwebsockets_server_eventloop.h	/^    PROTOCOL_GROUP_BASED_ON_RAW_SOCKET,$/;"	e	enum:lws_protocol_group
+PROTOCOL_GROUP_BASED_ON_RAW_SOCKET	libwebsockets_server_eventloop.h	/^    PROTOCOL_GROUP_BASED_ON_RAW_SOCKET,$/;"	e	enum:lws_protocol_group
+PROTOCOL_GROUP_BASED_ON_WEBSOCKETS	back/libwebsockets_server_eventloop.h	/^    PROTOCOL_GROUP_BASED_ON_WEBSOCKETS,$/;"	e	enum:lws_protocol_group
+PROTOCOL_GROUP_BASED_ON_WEBSOCKETS	libwebsockets_server_eventloop.h	/^    PROTOCOL_GROUP_BASED_ON_WEBSOCKETS,$/;"	e	enum:lws_protocol_group
+PROTOCOL_HTTP	back/libwebsockets_server_eventloop.c	/^    PROTOCOL_HTTP = 0,$/;"	e	enum:valid_websockets_protocols	file:
+PROTOCOL_HTTP	back/server_http.c	/^	PROTOCOL_HTTP = 0,$/;"	e	enum:demo_protocols	file:
+PROTOCOL_HTTP	libwebsockets_server_eventloop.c	/^    PROTOCOL_HTTP = 0,$/;"	e	enum:valid_websockets_protocols	file:
+PROTOCOL_HTTP	server_http.c	/^	PROTOCOL_HTTP = 0,$/;"	e	enum:demo_protocols	file:
+PROTOCOL_LWS_MIRROR	back/server_http.c	/^	PROTOCOL_LWS_MIRROR,$/;"	e	enum:demo_protocols	file:
+PROTOCOL_LWS_MIRROR	server_http.c	/^	PROTOCOL_LWS_MIRROR,$/;"	e	enum:demo_protocols	file:
+PROTOCOL_RAW_SOCKET	back/libwebsockets_server_eventloop.c	/^    PROTOCOL_RAW_SOCKET,$/;"	e	enum:valid_raw_socket_protocols	file:
+PROTOCOL_RAW_SOCKET	libwebsockets_server_eventloop.c	/^    PROTOCOL_RAW_SOCKET,$/;"	e	enum:valid_raw_socket_protocols	file:
+PROTOCOL_WEBSOCKTS	back/libwebsockets_server_eventloop.c	/^    PROTOCOL_WEBSOCKTS,$/;"	e	enum:valid_websockets_protocols	file:
+PROTOCOL_WEBSOCKTS	libwebsockets_server_eventloop.c	/^    PROTOCOL_WEBSOCKTS,$/;"	e	enum:valid_websockets_protocols	file:
+RAW_SOCKET_PROTOCOL_COUNT	back/libwebsockets_server_eventloop.c	/^    RAW_SOCKET_PROTOCOL_COUNT$/;"	e	enum:valid_raw_socket_protocols	file:
+RAW_SOCKET_PROTOCOL_COUNT	libwebsockets_server_eventloop.c	/^    RAW_SOCKET_PROTOCOL_COUNT$/;"	e	enum:valid_raw_socket_protocols	file:
+Release	ipc_server.cpp	/^    virtual void    Release()   \/\/ dec 1$/;"	f	class:ipc_connection_t
+SERVER_NOTIFY_CONNECTION_CLOSED	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_CONNECTION_CLOSED,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_CONNECTION_CLOSED	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_CONNECTION_CLOSED,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_CONNECTION_ESTABLISHED	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_CONNECTION_ESTABLISHED,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_CONNECTION_ESTABLISHED	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_CONNECTION_ESTABLISHED,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_GET_CLIENT_ADDR_FAILED	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_GET_CLIENT_ADDR_FAILED,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_GET_CLIENT_ADDR_FAILED	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_GET_CLIENT_ADDR_FAILED,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_DATA	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_DATA,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_DATA	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_DATA,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_DATA_IGNORED	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_DATA_IGNORED,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_DATA_IGNORED	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_DATA_IGNORED,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_SELF_BUFFER_FULL	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_SELF_BUFFER_FULL,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_SELF_BUFFER_FULL	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_SELF_BUFFER_FULL,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_SELF_REQUEST_ERROR	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_SELF_REQUEST_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_SELF_REQUEST_ERROR	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_SELF_REQUEST_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_WORKER_ERROR	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_WORKER_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_RECEIVE_WORKER_ERROR	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_RECEIVE_WORKER_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_SEND_DATA	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_SEND_DATA,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_SEND_DATA	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_SEND_DATA,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_SEND_DATA_ERROR	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_SEND_DATA_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_SEND_DATA_ERROR	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_SEND_DATA_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_WORKER_ASYNC_REQUEST_ERROR	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_WORKER_ASYNC_REQUEST_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_WORKER_ASYNC_REQUEST_ERROR	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_WORKER_ASYNC_REQUEST_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_WORKER_ASYNC_RESULT_ERROR	back/libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_WORKER_ASYNC_RESULT_ERROR,$/;"	e	enum:server_notify_reason
+SERVER_NOTIFY_WORKER_ASYNC_RESULT_ERROR	libwebsockets_server_module_defines.h	/^    SERVER_NOTIFY_WORKER_ASYNC_RESULT_ERROR,$/;"	e	enum:server_notify_reason
+STOP_FORCE	back/libwebsockets_server_eventloop.c	/^    STOP_FORCE = 2,$/;"	e	enum:__anon2	file:
+STOP_FORCE	libwebsockets_server_eventloop.c	/^    STOP_FORCE = 2,$/;"	e	enum:__anon1	file:
+STOP_REQUEST	back/libwebsockets_server_eventloop.c	/^    STOP_REQUEST = 1,$/;"	e	enum:__anon2	file:
+STOP_REQUEST	libwebsockets_server_eventloop.c	/^    STOP_REQUEST = 1,$/;"	e	enum:__anon1	file:
+SendResponse	ipc_server.cpp	/^    virtual int SendResponse(IRpcMessage *msg)$/;"	f	class:ipc_connection_t
+SetInstParam	ipc_server.cpp	/^    virtual void SetInstParam(void* pClient, int index)$/;"	f	class:ipc_connection_t
+SetIsClosed	ipc_server.cpp	/^    void SetIsClosed(bool is_close)$/;"	f	class:ipc_connection_t
+WEBSOCKETS_PROTOCOL_COUNT	back/libwebsockets_server_eventloop.c	/^    WEBSOCKETS_PROTOCOL_COUNT$/;"	e	enum:valid_websockets_protocols	file:
+WEBSOCKETS_PROTOCOL_COUNT	libwebsockets_server_eventloop.c	/^    WEBSOCKETS_PROTOCOL_COUNT$/;"	e	enum:valid_websockets_protocols	file:
+_IPC_SERVER_H_	back/ipc_server.h	2;"	d
+_IPC_SERVER_H_	ipc_server.h	2;"	d
+args	back/libwebsockets_server_eventloop.c	/^    struct lws_cgi_args args;$/;"	m	struct:per_session_data__http	typeref:struct:per_session_data__http::lws_cgi_args	file:
+args	back/server_http.c	/^	struct lws_cgi_args args;$/;"	m	struct:per_session_data__http	typeref:struct:per_session_data__http::lws_cgi_args	file:
+args	libwebsockets_server_eventloop.c	/^    struct lws_cgi_args args;$/;"	m	struct:per_session_data__http	typeref:struct:per_session_data__http::lws_cgi_args	file:
+args	server_http.c	/^	struct lws_cgi_args args;$/;"	m	struct:per_session_data__http	typeref:struct:per_session_data__http::lws_cgi_args	file:
+assign_data	back/ipc_server.cpp	/^LIB_PUBLIC uint32_t assign_data(wt_params_t *p_th_params,connection_t *p_conn, IRpcMessage* msg)$/;"	f
+async_message	back/libwebsockets_server_eventloop.c	/^typedef struct async_message$/;"	s	file:
+async_message	libwebsockets_server_eventloop.c	/^typedef struct async_message$/;"	s	file:
+async_message_t	back/libwebsockets_server_eventloop.c	/^}async_message_t;$/;"	t	typeref:struct:async_message	file:
+async_message_t	libwebsockets_server_eventloop.c	/^}async_message_t;$/;"	t	typeref:struct:async_message	file:
+async_params	back/ipc_server.h	/^	}async_params;$/;"	m	struct:io_params	typeref:struct:io_params::async_params_t
+async_params_t	back/ipc_server.h	/^	struct async_params_t$/;"	s	struct:io_params
+async_request	back/ipc_server.cpp	/^void callback::async_request(void *p_thread_params, void* p_conn_params,$/;"	f	class:callback
+async_request	ipc_server.cpp	/^void callback::async_request(void *p_thread_params, connect_t p_ipc_conn, const char *p_data, uint32_t data_len)$/;"	f	class:callback
+async_result	back/ipc_server.cpp	/^void callback::async_result(void *p_thread_params, OUT void **pp_token,$/;"	f	class:callback
+b_isclosable	back/ipc_server.cpp	/^	bool b_isclosable;$/;"	m	struct:conn_params	file:
+blocking_timeout	back/ipc_server.cpp	/^	int32_t blocking_timeout;$/;"	m	struct:__anon3	file:
+blocking_timeout	ipc_server.cpp	/^    int32_t blocking_timeout;$/;"	m	struct:__anon4	file:
+callback	back/ipc_server.cpp	/^class callback : public callback_base$/;"	c	file:
+callback	ipc_server.cpp	/^        callback(){m_p_rpcserver = NULL;}$/;"	f	class:callback
+callback	ipc_server.cpp	/^class callback : public callback_base$/;"	c	file:
+callback_base	back/libwebsockets_server_module_defines.h	/^class callback_base : public callback_interface$/;"	c
+callback_base	libwebsockets_server_module_defines.h	/^class callback_base : public callback_interface$/;"	c
+callback_close	back/libwebsockets_server_eventloop.c	/^static int32_t callback_close(lws_connection_t *p_connection, $/;"	f	file:
+callback_close	libwebsockets_server_eventloop.c	/^static int32_t callback_close(lws_connection_t *p_connection,$/;"	f	file:
+callback_establish	back/libwebsockets_server_eventloop.c	/^static int32_t callback_establish(lws_connection_t *p_connection, $/;"	f	file:
+callback_establish	libwebsockets_server_eventloop.c	/^static int32_t callback_establish(lws_connection_t *p_connection,$/;"	f	file:
+callback_http	back/server_http.c	/^int callback_http(struct lws *wsi, enum lws_callback_reasons reason, void *user,$/;"	f
+callback_http	server_http.c	/^int callback_http(struct lws *wsi, enum lws_callback_reasons reason, void *user,$/;"	f
+callback_interface	back/libwebsockets_server_module_defines.h	/^class callback_interface$/;"	c
+callback_interface	libwebsockets_server_module_defines.h	/^class callback_interface$/;"	c
+callback_raw_socket	back/libwebsockets_server_eventloop.c	/^static int32_t callback_raw_socket(lws_connection_t *p_connection, $/;"	f	file:
+callback_raw_socket	libwebsockets_server_eventloop.c	/^static int32_t callback_raw_socket(lws_connection_t *p_connection,$/;"	f	file:
+callback_receive	back/libwebsockets_server_eventloop.c	/^static int32_t callback_receive(lws_connection_t *p_connection, $/;"	f	file:
+callback_receive	libwebsockets_server_eventloop.c	/^static int32_t callback_receive(lws_connection_t *p_connection,$/;"	f	file:
+callback_receive_internal	back/libwebsockets_server_eventloop.c	/^static int32_t callback_receive_internal(lws_connection_t *p_connection, $/;"	f	file:
+callback_receive_internal	libwebsockets_server_eventloop.c	/^static int32_t callback_receive_internal(lws_connection_t *p_connection,$/;"	f	file:
+callback_t	back/ipc_server.cpp	/^typedef callback callback_t;$/;"	t	file:
+callback_t	ipc_server.cpp	/^typedef callback callback_t;$/;"	t	file:
+callback_websockets	back/libwebsockets_server_eventloop.c	/^static int32_t callback_websockets(lws_connection_t *p_connection, $/;"	f	file:
+callback_websockets	libwebsockets_server_eventloop.c	/^static int32_t callback_websockets(lws_connection_t *p_connection,$/;"	f	file:
+callback_writable	back/libwebsockets_server_eventloop.c	/^static int32_t callback_writable(lws_connection_t *p_connection, $/;"	f	file:
+callback_writable	libwebsockets_server_eventloop.c	/^static int32_t callback_writable(lws_connection_t *p_connection,$/;"	f	file:
+callback_writable_internal	back/libwebsockets_server_eventloop.c	/^static int32_t callback_writable_internal(lws_connection_t *p_connection, $/;"	f	file:
+callback_writable_internal	libwebsockets_server_eventloop.c	/^static int32_t callback_writable_internal(lws_connection_t *p_connection,$/;"	f	file:
+check_callbacks	back/libwebsockets_server_eventloop.c	/^static int32_t check_callbacks(callback_base *p_callback)$/;"	f	file:
+check_callbacks	libwebsockets_server_eventloop.c	/^static int32_t check_callbacks(callback_base *p_callback)$/;"	f	file:
+check_params	back/libwebsockets_server_eventloop.c	/^static int32_t check_params(lws_server_evloop_info_t *p_evloop_info)$/;"	f	file:
+check_params	libwebsockets_server_eventloop.c	/^static int32_t check_params(lws_server_evloop_info_t *p_evloop_info)$/;"	f	file:
+check_working_thread	back/libwebsockets_server_eventloop.c	/^static int32_t check_working_thread(lws_server_wt_t *p_working_thread)$/;"	f	file:
+check_working_thread	libwebsockets_server_eventloop.c	/^static int32_t check_working_thread(lws_server_wt_t *p_working_thread)$/;"	f	file:
+client_addr	back/libwebsockets_server_eventloop.c	/^    peer_addr_t client_addr;$/;"	m	struct:lws_connection_state	file:
+client_addr	libwebsockets_server_eventloop.c	/^    peer_addr_t client_addr;$/;"	m	struct:lws_connection_state	file:
+client_finished	back/libwebsockets_server_eventloop.c	/^    unsigned int client_finished:1;$/;"	m	struct:per_session_data__http	file:
+client_finished	back/server_http.c	/^	unsigned int client_finished:1;$/;"	m	struct:per_session_data__http	file:
+client_finished	libwebsockets_server_eventloop.c	/^    unsigned int client_finished:1;$/;"	m	struct:per_session_data__http	file:
+client_finished	server_http.c	/^	unsigned int client_finished:1;$/;"	m	struct:per_session_data__http	file:
+conn_params	back/ipc_server.cpp	/^typedef struct conn_params$/;"	s	file:
+conn_params_t	back/ipc_server.cpp	/^}conn_params_t;$/;"	t	typeref:struct:conn_params	file:
+conn_params_t	back/ipc_server.h	/^typedef struct conn_params conn_params_t;$/;"	t	typeref:struct:conn_params
+conn_shared_state	back/libwebsockets_server_eventloop.c	/^typedef struct conn_shared_state$/;"	s	file:
+conn_shared_state	libwebsockets_server_eventloop.c	/^typedef struct conn_shared_state$/;"	s	file:
+conn_shared_state_t	back/libwebsockets_server_eventloop.c	/^}conn_shared_state_t;$/;"	t	typeref:struct:conn_shared_state	file:
+conn_shared_state_t	libwebsockets_server_eventloop.c	/^}conn_shared_state_t;$/;"	t	typeref:struct:conn_shared_state	file:
+connect_t	back/libwebsockets_server_module_defines.h	/^typedef void* connect_t;$/;"	t
+connect_t	libwebsockets_server_module_defines.h	/^typedef void* connect_t;$/;"	t
+connection	back/ipc_server.cpp	/^	connection()$/;"	f	struct:connection
+connection	back/ipc_server.cpp	/^struct connection$/;"	s	file:
+connection_create	back/ipc_server.cpp	/^void *callback::connection_create(void)$/;"	f	class:callback
+connection_create	back/libwebsockets_server_module_defines.cxx	/^void *callback_base::connection_create(void)$/;"	f	class:callback_base
+connection_create	ipc_server.cpp	/^connect_t callback::connection_create(IN const peer_addr_t *p_peer_addr, IN void* p_token,$/;"	f	class:callback
+connection_create	libwebsockets_server_module_defines.cxx	/^connect_t callback_base::connection_create(IN const peer_addr_t *p_peer_addr, IN void* p_token,$/;"	f	class:callback_base
+connection_destroy	back/ipc_server.cpp	/^void callback::connection_destroy(void *p_conn_params)$/;"	f	class:callback
+connection_destroy	back/libwebsockets_server_module_defines.cxx	/^void callback_base::connection_destroy(void *p_conn_params)$/;"	f	class:callback_base
+connection_destroy	ipc_server.cpp	/^void callback::connection_destroy(void *p_ipc_conn)$/;"	f	class:callback
+connection_destroy	libwebsockets_server_module_defines.cxx	/^void callback_base::connection_destroy(void *p_rpc_conn)$/;"	f	class:callback_base
+connection_t	back/ipc_server.h	/^typedef struct connection connection_t;$/;"	t	typeref:struct:connection
+conns_queue	back/ipc_server.cpp	/^	std::queue<connection_t> conns_queue;$/;"	m	struct:wt_params	file:
+count	back/libwebsockets_server_module_defines.h	/^    uint8_t count;          \/\/ maximum working thread count is 31.$/;"	m	struct:lws_server_wt
+count	libwebsockets_server_module_defines.h	/^    uint8_t count;          \/\/ maximum working thread count is 31.$/;"	m	struct:lws_server_wt
+create_async_message	back/libwebsockets_server_eventloop.c	/^static async_message_t *create_async_message(lws_connection_state_t *p_state, $/;"	f	file:
+create_async_message	libwebsockets_server_eventloop.c	/^static async_message_t *create_async_message(lws_connection_state_t *p_state,$/;"	f	file:
+create_conn_shared_state	back/libwebsockets_server_eventloop.c	/^static conn_shared_state_t *create_conn_shared_state(lws_connection_state_t *p_state,$/;"	f	file:
+create_conn_shared_state	libwebsockets_server_eventloop.c	/^static conn_shared_state_t *create_conn_shared_state(lws_connection_state_t *p_state,$/;"	f	file:
+create_evloop_internal	back/libwebsockets_server_eventloop.c	/^static lws_server_evloop_t *create_evloop_internal(lws_server_evloop_info_t *p_evloop_info)$/;"	f	file:
+create_evloop_internal	libwebsockets_server_eventloop.c	/^static lws_server_evloop_t *create_evloop_internal(lws_server_evloop_info_t *p_evloop_info)$/;"	f	file:
+create_message	back/libwebsockets_server_eventloop.c	/^static message_t *create_message(const char *p_data, uint32_t data_length)$/;"	f	file:
+create_message	libwebsockets_server_eventloop.c	/^static message_t *create_message(const char *p_data, uint32_t data_length)$/;"	f	file:
+create_server_evloop	back/libwebsockets_server_eventloop.c	/^LIB_PUBLIC lws_server_evloop_t *create_server_evloop(lws_server_evloop_info_t *p_evloop_info)$/;"	f
+create_server_evloop	libwebsockets_server_eventloop.c	/^LIB_PUBLIC lws_server_evloop_t *create_server_evloop(lws_server_evloop_info_t *p_evloop_info)$/;"	f
+create_wt_params_ptrs	back/ipc_server.cpp	/^static wt_params_t **create_wt_params_ptrs(uint8_t working_thread_count)$/;"	f	file:
+create_wt_params_ptrs	ipc_server.cpp	/^static wt_params_t **create_wt_params_ptrs(uint8_t working_thread_count)$/;"	f	file:
+crl_path	back/libwebsockets_server_eventloop.c	/^char crl_path[1024] = "";$/;"	v
+crl_path	libwebsockets_server_eventloop.c	/^char crl_path[1024] = "";$/;"	v
+curr_thread_index	back/libwebsockets_server_eventloop.c	/^    uint8_t curr_thread_index;$/;"	m	struct:td_scheduler_params	file:
+curr_thread_index	libwebsockets_server_eventloop.c	/^    uint8_t curr_thread_index;$/;"	m	struct:td_scheduler_params	file:
+demo_protocols	back/server_http.c	/^enum demo_protocols {$/;"	g	file:
+demo_protocols	server_http.c	/^enum demo_protocols {$/;"	g	file:
+destroy_async_message	back/libwebsockets_server_eventloop.c	/^static void destroy_async_message(async_message_t *p_message)$/;"	f	file:
+destroy_async_message	libwebsockets_server_eventloop.c	/^static void destroy_async_message(async_message_t *p_message)$/;"	f	file:
+destroy_conn_shared_state	back/libwebsockets_server_eventloop.c	/^static void destroy_conn_shared_state(conn_shared_state_t *p_shared_state)$/;"	f	file:
+destroy_conn_shared_state	libwebsockets_server_eventloop.c	/^static void destroy_conn_shared_state(conn_shared_state_t *p_shared_state)$/;"	f	file:
+destroy_message	back/libwebsockets_server_eventloop.c	/^static void destroy_message(message_t *p_message)$/;"	f	file:
+destroy_message	libwebsockets_server_eventloop.c	/^static void destroy_message(message_t *p_message)$/;"	f	file:
+destroy_protocol_contexts	back/libwebsockets_server_eventloop.c	/^static void destroy_protocol_contexts(protocol_context_t *p_protocol_context)$/;"	f	file:
+destroy_protocol_contexts	libwebsockets_server_eventloop.c	/^static void destroy_protocol_contexts(protocol_context_t *p_protocol_context)$/;"	f	file:
+destroy_queued_messages	back/libwebsockets_server_eventloop.c	/^static void destroy_queued_messages(lws_connection_state_t *p_state)$/;"	f	file:
+destroy_queued_messages	libwebsockets_server_eventloop.c	/^static void destroy_queued_messages(lws_connection_state_t *p_state)$/;"	f	file:
+destroy_server_evloop	back/libwebsockets_server_eventloop.c	/^LIB_PUBLIC void destroy_server_evloop(lws_server_evloop_t *p_evloop)$/;"	f
+destroy_server_evloop	libwebsockets_server_eventloop.c	/^LIB_PUBLIC void destroy_server_evloop(lws_server_evloop_t *p_evloop)$/;"	f
+destroy_thread_contexts	back/libwebsockets_server_eventloop.c	/^static void destroy_thread_contexts(thread_context_t **pp_thread_context_ptrs, uint8_t count)$/;"	f	file:
+destroy_thread_contexts	libwebsockets_server_eventloop.c	/^static void destroy_thread_contexts(thread_context_t **pp_thread_context_ptrs, uint8_t count)$/;"	f	file:
+destroy_wt_params_ptrs	back/ipc_server.cpp	/^static void destroy_wt_params_ptrs(wt_params_t **pp_wt_params_ptrs,$/;"	f	file:
+destroy_wt_params_ptrs	ipc_server.cpp	/^static void destroy_wt_params_ptrs(wt_params_t **pp_wt_params_ptrs,$/;"	f	file:
+discard	back/libwebsockets_server_eventloop.c	/^    bool discard;$/;"	m	struct:lws_connection_state	file:
+discard	libwebsockets_server_eventloop.c	/^    bool discard;$/;"	m	struct:lws_connection_state	file:
+do_async_request	back/libwebsockets_server_eventloop.c	/^static void do_async_request(thread_context_t *p_context, async_message_t *p_async_message)$/;"	f	file:
+do_async_request	libwebsockets_server_eventloop.c	/^static void do_async_request(thread_context_t *p_context, async_message_t *p_async_message)$/;"	f	file:
+do_async_result	back/libwebsockets_server_eventloop.c	/^static void do_async_result(thread_context_t *p_context, conn_shared_state_t *sp_shared_state, $/;"	f	file:
+do_async_result	libwebsockets_server_eventloop.c	/^static void do_async_result(thread_context_t *p_context, conn_shared_state_t *sp_shared_state,$/;"	f	file:
+do_async_send	libwebsockets_server_eventloop.c	/^void do_async_send(IN void *sp_shared_state, const char *p_data, uint32_t data_length)$/;"	f
+do_sync_send	libwebsockets_server_eventloop.c	/^void do_sync_send(IN void* p_lws_connection, IN void *p_lws_token, const char *p_data, uint32_t data_length)$/;"	f
+dump_handshake_info	back/server_http.c	/^dump_handshake_info(struct lws *wsi)$/;"	f
+dump_handshake_info	server_http.c	/^dump_handshake_info(struct lws *wsi)$/;"	f
+enum_param_names	back/server_http.c	/^enum enum_param_names {$/;"	g	file:
+enum_param_names	server_http.c	/^enum enum_param_names {$/;"	g	file:
+file_length	back/libwebsockets_server_eventloop.c	/^    long file_length;$/;"	m	struct:per_session_data__http	file:
+file_length	back/server_http.c	/^	long file_length;$/;"	m	struct:per_session_data__http	file:
+file_length	libwebsockets_server_eventloop.c	/^    long file_length;$/;"	m	struct:per_session_data__http	file:
+file_length	server_http.c	/^	long file_length;$/;"	m	struct:per_session_data__http	file:
+file_upload_cb	back/server_http.c	/^file_upload_cb(void *data, const char *name, const char *filename,$/;"	f	file:
+file_upload_cb	server_http.c	/^file_upload_cb(void *data, const char *name, const char *filename,$/;"	f	file:
+filename	back/libwebsockets_server_eventloop.c	/^    char filename[256];$/;"	m	struct:per_session_data__http	file:
+filename	back/server_http.c	/^	char filename[256];$/;"	m	struct:per_session_data__http	file:
+filename	libwebsockets_server_eventloop.c	/^    char filename[256];$/;"	m	struct:per_session_data__http	file:
+filename	server_http.c	/^	char filename[256];$/;"	m	struct:per_session_data__http	file:
+fill_client_addr	back/libwebsockets_server_eventloop.c	/^static int32_t fill_client_addr(peer_addr_t *p_client_addr, lws_connection_t *p_connection)$/;"	f	file:
+fill_client_addr	libwebsockets_server_eventloop.c	/^static int32_t fill_client_addr(peer_addr_t *p_client_addr, lws_connection_t *p_connection)$/;"	f	file:
+fop_fd	back/libwebsockets_server_eventloop.c	/^    lws_fop_fd_t fop_fd;$/;"	m	struct:per_session_data__http	file:
+fop_fd	back/server_http.c	/^	lws_fop_fd_t fop_fd;$/;"	m	struct:per_session_data__http	file:
+fop_fd	libwebsockets_server_eventloop.c	/^    lws_fop_fd_t fop_fd;$/;"	m	struct:per_session_data__http	file:
+fop_fd	server_http.c	/^	lws_fop_fd_t fop_fd;$/;"	m	struct:per_session_data__http	file:
+g_debug_level	back/libwebsockets_server_eventloop.c	/^int32_t g_debug_level = LLL_ERR | LLL_WARN | LLL_NOTICE | LLL_INFO;$/;"	v
+g_debug_level	libwebsockets_server_eventloop.c	/^int32_t g_debug_level = LLL_ERR | LLL_WARN | LLL_NOTICE | LLL_INFO;$/;"	v
+g_force_exit	back/libwebsockets_server_eventloop.c	/^volatile int32_t g_force_exit = 0;$/;"	v
+g_force_exit	libwebsockets_server_eventloop.c	/^volatile int32_t g_force_exit = 0;$/;"	v
+g_p_format_str	back/ipc_server.cpp	/^const char g_p_format_str [] = "%s received ok";$/;"	v
+g_p_server_context	back/libwebsockets_server_eventloop.c	/^lws_server_context_t *g_p_server_context;$/;"	v
+g_p_server_context	libwebsockets_server_eventloop.c	/^lws_server_context_t *g_p_server_context;$/;"	v
+get_client_addr	back/libwebsockets_server_eventloop.c	/^static int32_t get_client_addr(lws_connection_state_t *p_state, lws_connection_t *p_connection,$/;"	f	file:
+get_client_addr	libwebsockets_server_eventloop.c	/^static int32_t get_client_addr(lws_connection_state_t *p_state, lws_connection_t *p_connection,$/;"	f	file:
+get_current_protocols	back/libwebsockets_server_eventloop.c	/^static lws_protocol_t *get_current_protocols(lws_protocol_group_t protocol_group)$/;"	f	file:
+get_current_protocols	libwebsockets_server_eventloop.c	/^static lws_protocol_t *get_current_protocols(lws_protocol_group_t protocol_group)$/;"	f	file:
+get_mimetype	back/server_http.c	/^const char * get_mimetype(const char *file)$/;"	f
+get_mimetype	server_http.c	/^const char * get_mimetype(const char *file)$/;"	f
+get_notify	back/ipc_server.cpp	/^	inline notify_cbk_t get_notify()$/;"	f	class:callback
+get_one_message	back/libwebsockets_server_eventloop.c	/^static int32_t get_one_message(lws_connection_state_t *p_state, message_t **pp_message)$/;"	f	file:
+get_one_message	libwebsockets_server_eventloop.c	/^static int32_t get_one_message(lws_connection_state_t *p_state, message_t **pp_message)$/;"	f	file:
+get_protocol_context	back/libwebsockets_server_eventloop.c	/^static protocol_context_t *get_protocol_context(lws_connection_t *p_connection)$/;"	f	file:
+get_protocol_context	libwebsockets_server_eventloop.c	/^static protocol_context_t *get_protocol_context(lws_connection_t *p_connection)$/;"	f	file:
+get_rpcserver	ipc_server.cpp	/^        inline IRpcServer* get_rpcserver()$/;"	f	class:callback
+handle_data	back/libwebsockets_server_eventloop.c	/^static void handle_data(lws_connection_t *p_connection, $/;"	f	file:
+handle_data	libwebsockets_server_eventloop.c	/^static void handle_data(lws_connection_t *p_connection,$/;"	f	file:
+handle_data_by_self	back/libwebsockets_server_eventloop.c	/^static void handle_data_by_self(lws_connection_t *p_connection, $/;"	f	file:
+handle_data_by_self	libwebsockets_server_eventloop.c	/^static void handle_data_by_self(lws_connection_t *p_connection,$/;"	f	file:
+handle_next_message	back/libwebsockets_server_eventloop.c	/^static void handle_next_message(lws_connection_t *p_connection, $/;"	f	file:
+handle_next_message	libwebsockets_server_eventloop.c	/^static void handle_next_message(lws_connection_t *p_connection,$/;"	f	file:
+handle_one_async_message	back/libwebsockets_server_eventloop.c	/^static bool handle_one_async_message(thread_context_t *p_context)$/;"	f	file:
+handle_one_async_message	libwebsockets_server_eventloop.c	/^static bool handle_one_async_message(thread_context_t *p_context)$/;"	f	file:
+handle_one_async_result	back/libwebsockets_server_eventloop.c	/^static bool handle_one_async_result(thread_context_t *p_context)$/;"	f	file:
+handle_one_async_result	libwebsockets_server_eventloop.c	/^static bool handle_one_async_result(thread_context_t *p_context)$/;"	f	file:
+hint_max_sending_size	back/libwebsockets_server_eventloop.h	/^    uint16_t hint_max_sending_size;$/;"	m	struct:lws_server_evloop_info
+hint_max_sending_size	libwebsockets_server_eventloop.h	/^    uint16_t hint_max_sending_size;$/;"	m	struct:lws_server_evloop_info
+initialize_conn_shared_state	back/libwebsockets_server_eventloop.c	/^static int32_t initialize_conn_shared_state(lws_connection_state_t *p_state,$/;"	f	file:
+initialize_conn_shared_state	libwebsockets_server_eventloop.c	/^static int32_t initialize_conn_shared_state(lws_connection_state_t *p_state,$/;"	f	file:
+initialize_thread_context_ptrs	back/libwebsockets_server_eventloop.c	/^static int32_t initialize_thread_context_ptrs(thread_context_t **pp_thread_context_ptrs, $/;"	f	file:
+initialize_thread_context_ptrs	libwebsockets_server_eventloop.c	/^static int32_t initialize_thread_context_ptrs(thread_context_t **pp_thread_context_ptrs,$/;"	f	file:
+initialize_thread_contexts	back/libwebsockets_server_eventloop.c	/^static thread_context_t **initialize_thread_contexts(lws_server_evloop_info_t *p_evloop_info)$/;"	f	file:
+initialize_thread_contexts	libwebsockets_server_eventloop.c	/^static thread_context_t **initialize_thread_contexts(lws_server_evloop_info_t *p_evloop_info)$/;"	f	file:
+initialize_thread_pool	back/libwebsockets_server_eventloop.c	/^static thread_pool_t *initialize_thread_pool(lws_server_evloop_t *p_evloop, $/;"	f	file:
+initialize_thread_pool	libwebsockets_server_eventloop.c	/^static thread_pool_t *initialize_thread_pool(lws_server_evloop_t *p_evloop,$/;"	f	file:
+initialize_working_threads	back/libwebsockets_server_eventloop.c	/^static int32_t initialize_working_threads(lws_server_evloop_t *p_evloop, $/;"	f	file:
+initialize_working_threads	libwebsockets_server_eventloop.c	/^static int32_t initialize_working_threads(lws_server_evloop_t *p_evloop,$/;"	f	file:
+initialize_wt_params	back/ipc_server.cpp	/^static int32_t initialize_wt_params(wt_params_t **p_wt_params_ptrs,$/;"	f	file:
+initialize_wt_params	ipc_server.cpp	/^static int32_t initialize_wt_params(wt_params_t **p_wt_params_ptrs,$/;"	f	file:
+input_length	back/ipc_server.cpp	/^	uint32_t input_length;$/;"	m	struct:conn_params	file:
+io_params	back/ipc_server.h	/^typedef struct io_params$/;"	s
+io_params_t	back/ipc_server.h	/^}io_params_t;$/;"	t	typeref:struct:io_params
+ipc_connection_t	ipc_server.cpp	/^    ipc_connection_t(IRpcServer*p_rpcserver, void* p_token, void* p_lws_token, void* p_lws_connection, IN const peer_addr_t* p_addr)$/;"	f	class:ipc_connection_t
+ipc_connection_t	ipc_server.cpp	/^class ipc_connection_t: public IRpcConnection$/;"	c	file:
+ipc_server	back/ipc_server.cpp	/^struct ipc_server{$/;"	s	file:
+ipc_server	ipc_server.cpp	/^struct ipc_server{$/;"	s	file:
+ipc_server_t	back/ipc_server.h	/^typedef struct ipc_server ipc_server_t;$/;"	t	typeref:struct:ipc_server
+ipc_server_t	ipc_server.h	/^typedef struct ipc_server ipc_server_t;$/;"	t	typeref:struct:ipc_server
+is_closable	back/ipc_server.cpp	/^bool callback::is_closable(void *p_conn_params)$/;"	f	class:callback
+is_closable	back/libwebsockets_server_module_defines.cxx	/^bool callback_base::is_closable(void *p_conn_params)$/;"	f	class:callback_base
+is_closable	ipc_server.cpp	/^bool callback::is_closable(void *p_conn_params)$/;"	f	class:callback
+is_closable	libwebsockets_server_module_defines.cxx	/^bool callback_base::is_closable(void *p_rpc_conn)$/;"	f	class:callback_base
+is_data_sending	back/libwebsockets_server_eventloop.c	/^    bool is_data_sending;$/;"	m	struct:protocol_context	file:
+is_data_sending	libwebsockets_server_eventloop.c	/^    bool is_data_sending;$/;"	m	struct:protocol_context	file:
+is_pending_stop	back/libwebsockets_server_eventloop.c	/^    bool is_pending_stop;$/;"	m	struct:protocol_context	file:
+is_pending_stop	libwebsockets_server_eventloop.c	/^    bool is_pending_stop;$/;"	m	struct:protocol_context	file:
+launch_evloop_internal	back/libwebsockets_server_eventloop.c	/^static void launch_evloop_internal(lws_server_evloop_t *p_evloop, int32_t blocking_timeout)$/;"	f	file:
+launch_evloop_internal	libwebsockets_server_eventloop.c	/^static void launch_evloop_internal(lws_server_evloop_t *p_evloop, int32_t blocking_timeout)$/;"	f	file:
+launch_server_evloop	back/libwebsockets_server_eventloop.c	/^LIB_PUBLIC void launch_server_evloop(lws_server_evloop_t *p_evloop, int32_t blocking_timeout)$/;"	f
+launch_server_evloop	libwebsockets_server_eventloop.c	/^LIB_PUBLIC void launch_server_evloop(lws_server_evloop_t *p_evloop, int32_t blocking_timeout)$/;"	f
+length	back/libwebsockets_server_eventloop.c	/^    uint32_t length;$/;"	m	struct:message	file:
+length	libwebsockets_server_eventloop.c	/^    uint32_t length;$/;"	m	struct:message	file:
+lock	back/ipc_server.cpp	/^	pthread_spinlock_t lock;$/;"	m	struct:conn_params	file:
+lock	back/ipc_server.cpp	/^	pthread_spinlock_t lock;$/;"	m	struct:wt_params	file:
+lock	back/libwebsockets_server_eventloop.c	/^    pthread_spinlock_t lock;$/;"	m	struct:conn_shared_state	file:
+lock	back/libwebsockets_server_eventloop.c	/^    pthread_spinlock_t lock;$/;"	m	struct:thread_context	file:
+lock	ipc_server.cpp	/^    pthread_spinlock_t lock;$/;"	m	struct:wt_params	file:
+lock	libwebsockets_server_eventloop.c	/^    pthread_spinlock_t lock;$/;"	m	struct:conn_shared_state	file:
+lock	libwebsockets_server_eventloop.c	/^    pthread_spinlock_t lock;$/;"	m	struct:thread_context	file:
+lock_established_conns	back/libwebsockets_server_eventloop.c	/^pthread_mutex_t lock_established_conns;$/;"	v
+lock_established_conns	libwebsockets_server_eventloop.c	/^pthread_mutex_t lock_established_conns;$/;"	v
+lws_callback_reason_t	back/libwebsockets_server_eventloop.c	/^typedef enum lws_callback_reasons lws_callback_reason_t;$/;"	t	typeref:enum:lws_callback_reasons	file:
+lws_callback_reason_t	libwebsockets_server_eventloop.c	/^typedef enum lws_callback_reasons lws_callback_reason_t;$/;"	t	typeref:enum:lws_callback_reasons	file:
+lws_connection_state	back/libwebsockets_server_eventloop.c	/^typedef struct lws_connection_state$/;"	s	file:
+lws_connection_state	libwebsockets_server_eventloop.c	/^typedef struct lws_connection_state$/;"	s	file:
+lws_connection_state_t	back/libwebsockets_server_eventloop.c	/^}lws_connection_state_t;$/;"	t	typeref:struct:lws_connection_state	file:
+lws_connection_state_t	libwebsockets_server_eventloop.c	/^}lws_connection_state_t;$/;"	t	typeref:struct:lws_connection_state	file:
+lws_connection_t	back/libwebsockets_server_eventloop.c	/^typedef struct lws lws_connection_t;$/;"	t	typeref:struct:lws	file:
+lws_connection_t	libwebsockets_server_eventloop.c	/^typedef struct lws lws_connection_t;$/;"	t	typeref:struct:lws	file:
+lws_protocol_extension_t	back/libwebsockets_server_eventloop.c	/^typedef struct lws_extension lws_protocol_extension_t;$/;"	t	typeref:struct:lws_extension	file:
+lws_protocol_extension_t	libwebsockets_server_eventloop.c	/^typedef struct lws_extension lws_protocol_extension_t;$/;"	t	typeref:struct:lws_extension	file:
+lws_protocol_group	back/libwebsockets_server_eventloop.h	/^typedef enum lws_protocol_group$/;"	g
+lws_protocol_group	libwebsockets_server_eventloop.h	/^typedef enum lws_protocol_group$/;"	g
+lws_protocol_group_t	back/libwebsockets_server_eventloop.h	/^}lws_protocol_group_t;$/;"	t	typeref:enum:lws_protocol_group
+lws_protocol_group_t	libwebsockets_server_eventloop.h	/^}lws_protocol_group_t;$/;"	t	typeref:enum:lws_protocol_group
+lws_protocol_t	back/libwebsockets_server_eventloop.c	/^typedef struct lws_protocols lws_protocol_t;$/;"	t	typeref:struct:lws_protocols	file:
+lws_protocol_t	libwebsockets_server_eventloop.c	/^typedef struct lws_protocols lws_protocol_t;$/;"	t	typeref:struct:lws_protocols	file:
+lws_server_context_creation_info_t	back/libwebsockets_server_eventloop.c	/^typedef struct lws_context_creation_info lws_server_context_creation_info_t;$/;"	t	typeref:struct:lws_context_creation_info	file:
+lws_server_context_creation_info_t	libwebsockets_server_eventloop.c	/^typedef struct lws_context_creation_info lws_server_context_creation_info_t;$/;"	t	typeref:struct:lws_context_creation_info	file:
+lws_server_context_t	back/libwebsockets_server_eventloop.c	/^typedef struct lws_context lws_server_context_t;$/;"	t	typeref:struct:lws_context	file:
+lws_server_context_t	libwebsockets_server_eventloop.c	/^typedef struct lws_context lws_server_context_t;$/;"	t	typeref:struct:lws_context	file:
+lws_server_evloop	back/libwebsockets_server_eventloop.c	/^typedef struct lws_server_evloop$/;"	s	file:
+lws_server_evloop	libwebsockets_server_eventloop.c	/^typedef struct lws_server_evloop$/;"	s	file:
+lws_server_evloop_info	back/libwebsockets_server_eventloop.h	/^typedef struct lws_server_evloop_info$/;"	s
+lws_server_evloop_info	libwebsockets_server_eventloop.h	/^typedef struct lws_server_evloop_info$/;"	s
+lws_server_evloop_info_t	back/libwebsockets_server_eventloop.h	/^}lws_server_evloop_info_t;$/;"	t	typeref:struct:lws_server_evloop_info
+lws_server_evloop_info_t	libwebsockets_server_eventloop.h	/^}lws_server_evloop_info_t;$/;"	t	typeref:struct:lws_server_evloop_info
+lws_server_evloop_t	back/libwebsockets_server_eventloop.c	/^}lws_server_evloop_t;$/;"	t	typeref:struct:lws_server_evloop	file:
+lws_server_evloop_t	back/libwebsockets_server_eventloop.h	/^typedef struct lws_server_evloop lws_server_evloop_t;$/;"	t	typeref:struct:lws_server_evloop
+lws_server_evloop_t	libwebsockets_server_eventloop.c	/^}lws_server_evloop_t;$/;"	t	typeref:struct:lws_server_evloop	file:
+lws_server_evloop_t	libwebsockets_server_eventloop.h	/^typedef struct lws_server_evloop lws_server_evloop_t;$/;"	t	typeref:struct:lws_server_evloop
+lws_server_vhost_t	back/libwebsockets_server_eventloop.c	/^typedef struct lws_vhost lws_server_vhost_t;$/;"	t	typeref:struct:lws_vhost	file:
+lws_server_vhost_t	libwebsockets_server_eventloop.c	/^typedef struct lws_vhost lws_server_vhost_t;$/;"	t	typeref:struct:lws_vhost	file:
+lws_server_wt	back/libwebsockets_server_module_defines.h	/^typedef struct lws_server_wt$/;"	s
+lws_server_wt	libwebsockets_server_module_defines.h	/^typedef struct lws_server_wt$/;"	s
+lws_server_wt_t	back/libwebsockets_server_module_defines.h	/^}lws_server_wt_t;$/;"	t	typeref:struct:lws_server_wt
+lws_server_wt_t	libwebsockets_server_module_defines.h	/^}lws_server_wt_t;$/;"	t	typeref:struct:lws_server_wt
+lws_write_method	back/libwebsockets_server_eventloop.c	/^typedef enum lws_write_protocol lws_write_method;$/;"	t	typeref:enum:lws_write_protocol	file:
+lws_write_method	libwebsockets_server_eventloop.c	/^typedef enum lws_write_protocol lws_write_method;$/;"	t	typeref:enum:lws_write_protocol	file:
+m_InstParam	ipc_server.cpp	/^    void *          m_InstParam[MAX_INSTPARAMS];$/;"	m	class:ipc_connection_t	file:
+m_b_is_closable	ipc_server.cpp	/^    bool            m_b_is_closable;$/;"	m	class:ipc_connection_t	file:
+m_lRef	ipc_server.cpp	/^    long            m_lRef;$/;"	m	class:ipc_connection_t	file:
+m_notify_cbk	back/ipc_server.cpp	/^	notify_cbk_t m_notify_cbk;$/;"	m	class:callback	file:
+m_pIRpcServer	ipc_server.cpp	/^    IRpcServer*     m_pIRpcServer;$/;"	m	class:ipc_connection_t	file:
+m_p_lws_connection	ipc_server.cpp	/^    void*           m_p_lws_connection;$/;"	m	class:ipc_connection_t	file:
+m_p_lws_token	ipc_server.cpp	/^    void*           m_p_lws_token;$/;"	m	class:ipc_connection_t	file:
+m_p_peer_addr	ipc_server.cpp	/^	const peer_addr_t* 	m_p_peer_addr;$/;"	m	class:ipc_connection_t	file:
+m_p_rpcserver	ipc_server.cpp	/^        IRpcServer*     m_p_rpcserver;$/;"	m	class:callback	file:
+m_p_token	ipc_server.cpp	/^    void*           m_p_token;$/;"	m	class:ipc_connection_t	file:
+m_strdata	ipc_server.cpp	/^	std::string 	m_strdata;$/;"	m	class:ipc_connection_t	file:
+m_sync_flag	ipc_server.cpp	/^    uint32_t        m_sync_flag;   \/\/ 1 sync  0 async$/;"	m	class:ipc_connection_t	file:
+mark_conn_as_close	back/libwebsockets_server_eventloop.c	/^static void mark_conn_as_close(conn_shared_state_t *sp_shared_state)$/;"	f	file:
+mark_conn_as_close	libwebsockets_server_eventloop.c	/^static void mark_conn_as_close(conn_shared_state_t *sp_shared_state)$/;"	f	file:
+max_thread_count	back/libwebsockets_server_eventloop.c	/^    uint8_t max_thread_count;$/;"	m	struct:td_scheduler_params	file:
+max_thread_count	libwebsockets_server_eventloop.c	/^    uint8_t max_thread_count;$/;"	m	struct:td_scheduler_params	file:
+message	back/libwebsockets_server_eventloop.c	/^typedef struct message$/;"	s	file:
+message	libwebsockets_server_eventloop.c	/^typedef struct message$/;"	s	file:
+message_t	back/libwebsockets_server_eventloop.c	/^}message_t;$/;"	t	typeref:struct:message	file:
+message_t	libwebsockets_server_eventloop.c	/^}message_t;$/;"	t	typeref:struct:message	file:
+mimetype	back/server_http.c	/^	const char *mimetype;$/;"	m	struct:serveable	file:
+mimetype	server_http.c	/^	const char *mimetype;$/;"	m	struct:serveable	file:
+msg	back/ipc_server.h	/^		IRpcMessage* msg;$/;"	m	struct:io_params::sync_params_t
+msg	back/ipc_server.h	/^	IRpcMessage* msg;$/;"	m	struct:response_data
+no_message	back/libwebsockets_server_eventloop.c	/^static int32_t no_message(lws_connection_state_t *p_state)$/;"	f	file:
+no_message	libwebsockets_server_eventloop.c	/^static int32_t no_message(lws_connection_state_t *p_state)$/;"	f	file:
+notify	back/ipc_server.cpp	/^void callback::notify(void *p_conn_params, server_notify_reason_t reason, $/;"	f	class:callback
+notify	back/libwebsockets_server_module_defines.cxx	/^void callback_base::notify(void *p_conn_params, server_notify_reason_t reason, $/;"	f	class:callback_base
+notify	ipc_server.cpp	/^void callback::notify(void *p_ipc_conn, server_notify_reason_t reason,$/;"	f	class:callback
+notify	libwebsockets_server_module_defines.cxx	/^void callback_base::notify(void *p_rpc_conn, server_notify_reason_t reason,$/;"	f	class:callback_base
+notify_async_result_error	back/libwebsockets_server_eventloop.c	/^static void notify_async_result_error(thread_context_t *p_context, $/;"	f	file:
+notify_async_result_error	libwebsockets_server_eventloop.c	/^static void notify_async_result_error(thread_context_t *p_context,$/;"	f	file:
+notify_cbk_t	back/ipc_server.h	/^typedef void(*notify_cbk_t)(IN IRpcMessage* msg , OUT io_params_t* io_params\/*, OUT const IRpcMessage* msg*\/);$/;"	t
+out_len	back/ipc_server.cpp	/^	uint32_t out_len;$/;"	m	struct:queue_ele	file:
+output_length	back/ipc_server.cpp	/^	uint32_t output_length;$/;"	m	struct:conn_params	file:
+p_async_params	back/libwebsockets_server_eventloop.c	/^    void *p_async_params;$/;"	m	struct:thread_context	file:
+p_async_params	libwebsockets_server_eventloop.c	/^    void *p_async_params;$/;"	m	struct:thread_context	file:
+p_callback	back/libwebsockets_server_eventloop.c	/^    callback_base *p_callback;$/;"	m	struct:protocol_context	file:
+p_callback	back/libwebsockets_server_eventloop.c	/^    callback_base *p_callback;$/;"	m	struct:thread_context	file:
+p_callback	back/libwebsockets_server_eventloop.h	/^    callback_base *p_callback;$/;"	m	struct:lws_server_evloop_info
+p_callback	libwebsockets_server_eventloop.c	/^    callback_base *p_callback;$/;"	m	struct:protocol_context	file:
+p_callback	libwebsockets_server_eventloop.c	/^    callback_base *p_callback;$/;"	m	struct:thread_context	file:
+p_callback	libwebsockets_server_eventloop.h	/^    callback_base *p_callback;$/;"	m	struct:lws_server_evloop_info
+p_conn	back/ipc_server.h	/^		connection_t *p_conn;$/;"	m	struct:io_params::async_params_t
+p_conn_params	back/ipc_server.cpp	/^	conn_params_t *p_conn_params;$/;"	m	struct:connection	file:
+p_conn_params	back/libwebsockets_server_eventloop.c	/^    void *p_conn_params;$/;"	m	struct:conn_shared_state	file:
+p_conn_params	back/libwebsockets_server_eventloop.c	/^    void *p_conn_params;$/;"	m	struct:lws_connection_state	file:
+p_conn_params	libwebsockets_server_eventloop.c	/^    void *p_conn_params;$/;"	m	struct:conn_shared_state	file:
+p_conn_params	libwebsockets_server_eventloop.c	/^    void *p_conn_params;$/;"	m	struct:lws_connection_state	file:
+p_connection	back/libwebsockets_server_eventloop.c	/^    lws_connection_t *p_connection;$/;"	m	struct:conn_shared_state	file:
+p_connection	libwebsockets_server_eventloop.c	/^    lws_connection_t *p_connection;$/;"	m	struct:conn_shared_state	file:
+p_event_loop	back/ipc_server.cpp	/^	lws_server_evloop_t *p_event_loop;$/;"	m	struct:__anon3	file:
+p_event_loop	ipc_server.cpp	/^    lws_server_evloop_t *p_event_loop;$/;"	m	struct:__anon4	file:
+p_evloop	back/ipc_server.cpp	/^	lws_server_evloop_t *p_evloop;$/;"	m	struct:ipc_server	file:
+p_evloop	ipc_server.cpp	/^	lws_server_evloop_t *p_evloop;$/;"	m	struct:ipc_server	file:
+p_iface	back/libwebsockets_server_eventloop.h	/^	const char *p_iface;            \/\/ NULL to bind the listen socket to all interfaces$/;"	m	struct:lws_server_evloop_info
+p_iface	libwebsockets_server_eventloop.h	/^	const char *p_iface;            \/\/ NULL to bind the listen socket to all interfaces$/;"	m	struct:lws_server_evloop_info
+p_input_buffer	back/ipc_server.cpp	/^	char *p_input_buffer;$/;"	m	struct:conn_params	file:
+p_last_output_buffer	back/ipc_server.cpp	/^	char* p_last_output_buffer;$/;"	m	struct:wt_params	file:
+p_last_output_buffer	ipc_server.cpp	/^    char* p_last_output_buffer;$/;"	m	struct:wt_params	file:
+p_message	back/libwebsockets_server_eventloop.c	/^    message_t *p_message;$/;"	m	struct:async_message	file:
+p_message	libwebsockets_server_eventloop.c	/^    message_t *p_message;$/;"	m	struct:async_message	file:
+p_out_buffer	back/ipc_server.cpp	/^	char *p_out_buffer;$/;"	m	struct:queue_ele	file:
+p_output_buffer	back/ipc_server.cpp	/^	char *p_output_buffer;$/;"	m	struct:conn_params	file:
+p_output_queue	back/ipc_server.cpp	/^	std::queue<queue_ele_t*> *p_output_queue;$/;"	m	struct:conn_params	file:
+p_queue	back/libwebsockets_server_eventloop.c	/^    struct Queue *p_queue;              \/\/ Use queue instead temporarily. And working thread run in a loop if queue is full.$/;"	m	struct:lws_connection_state	typeref:struct:lws_connection_state::Queue	file:
+p_queue	back/libwebsockets_server_eventloop.c	/^    struct Queue *p_queue;$/;"	m	struct:thread_context	typeref:struct:thread_context::Queue	file:
+p_queue	libwebsockets_server_eventloop.c	/^    struct Queue *p_queue;              \/\/ Use queue instead temporarily. And working thread run in a loop if queue is full.$/;"	m	struct:lws_connection_state	typeref:struct:lws_connection_state::Queue	file:
+p_queue	libwebsockets_server_eventloop.c	/^    struct Queue *p_queue;$/;"	m	struct:thread_context	typeref:struct:thread_context::Queue	file:
+p_sending_buf	back/libwebsockets_server_eventloop.c	/^    unsigned char *p_sending_buf;$/;"	m	struct:message	file:
+p_sending_buf	libwebsockets_server_eventloop.c	/^    unsigned char *p_sending_buf;$/;"	m	struct:message	file:
+p_server_context	back/libwebsockets_server_eventloop.c	/^    lws_server_context_t *p_server_context;$/;"	m	struct:lws_server_evloop	file:
+p_server_context	libwebsockets_server_eventloop.c	/^    lws_server_context_t *p_server_context;$/;"	m	struct:lws_server_evloop	file:
+p_thread_pool	back/libwebsockets_server_eventloop.c	/^    thread_pool_t *p_thread_pool;$/;"	m	struct:protocol_context	file:
+p_thread_pool	libwebsockets_server_eventloop.c	/^    thread_pool_t *p_thread_pool;$/;"	m	struct:protocol_context	file:
+p_token	back/ipc_server.cpp	/^	void *p_token;$/;"	m	struct:connection	file:
+p_wt_param	back/ipc_server.h	/^		wt_params_t  *p_wt_param;$/;"	m	struct:io_params::async_params_t
+param_names	back/server_http.c	/^static const char * const param_names[] = {$/;"	v	file:
+param_names	server_http.c	/^static const char * const param_names[] = {$/;"	v	file:
+per_session_data__http	back/libwebsockets_server_eventloop.c	/^struct per_session_data__http $/;"	s	file:
+per_session_data__http	back/server_http.c	/^struct per_session_data__http $/;"	s	file:
+per_session_data__http	libwebsockets_server_eventloop.c	/^struct per_session_data__http$/;"	s	file:
+per_session_data__http	server_http.c	/^struct per_session_data__http $/;"	s	file:
+port	back/libwebsockets_server_eventloop.h	/^    uint16_t port;$/;"	m	struct:lws_server_evloop_info
+port	libwebsockets_server_eventloop.h	/^    uint16_t port;$/;"	m	struct:lws_server_evloop_info
+post_fd	back/libwebsockets_server_eventloop.c	/^    lws_filefd_type post_fd;$/;"	m	struct:per_session_data__http	file:
+post_fd	back/server_http.c	/^	lws_filefd_type post_fd;$/;"	m	struct:per_session_data__http	file:
+post_fd	libwebsockets_server_eventloop.c	/^    lws_filefd_type post_fd;$/;"	m	struct:per_session_data__http	file:
+post_fd	server_http.c	/^	lws_filefd_type post_fd;$/;"	m	struct:per_session_data__http	file:
+pp_params	back/libwebsockets_server_module_defines.h	/^    void **pp_params;$/;"	m	struct:lws_server_wt
+pp_params	libwebsockets_server_module_defines.h	/^    void **pp_params;$/;"	m	struct:lws_server_wt
+pp_thread_contexts	back/libwebsockets_server_eventloop.c	/^    thread_context_t **pp_thread_contexts;$/;"	m	struct:protocol_context	file:
+pp_thread_contexts	libwebsockets_server_eventloop.c	/^    thread_context_t **pp_thread_contexts;$/;"	m	struct:protocol_context	file:
+prepare_conn_shared_state	back/libwebsockets_server_eventloop.c	/^static int32_t prepare_conn_shared_state(lws_connection_state_t *p_state, $/;"	f	file:
+prepare_conn_shared_state	libwebsockets_server_eventloop.c	/^static int32_t prepare_conn_shared_state(lws_connection_state_t *p_state,$/;"	f	file:
+prepare_input_buffer	back/ipc_server.cpp	/^static int32_t prepare_input_buffer(conn_params_t* p_conn_params, uint32_t input_length)$/;"	f	file:
+prepare_output_buffer	back/ipc_server.cpp	/^static int32_t prepare_output_buffer(conn_params_t *p_params, uint32_t output_length) $/;"	f	file:
+prepare_output_buffer	back/ipc_server.cpp	/^static int32_t prepare_output_buffer(queue_ele_t *p_ele, uint32_t output_length)$/;"	f	file:
+prepare_protocols	back/libwebsockets_server_eventloop.c	/^static int32_t prepare_protocols(lws_server_evloop_t *p_evloop, $/;"	f	file:
+prepare_protocols	libwebsockets_server_eventloop.c	/^static int32_t prepare_protocols(lws_server_evloop_t *p_evloop,$/;"	f	file:
+prepare_protocols_by_current_group	back/libwebsockets_server_eventloop.c	/^static void prepare_protocols_by_current_group(lws_server_evloop_t *p_evloop, $/;"	f	file:
+prepare_protocols_by_current_group	libwebsockets_server_eventloop.c	/^static void prepare_protocols_by_current_group(lws_server_evloop_t *p_evloop,$/;"	f	file:
+prepare_server	back/libwebsockets_server_eventloop.c	/^static lws_server_context_t *prepare_server(lws_server_evloop_t *p_evloop, $/;"	f	file:
+prepare_server	libwebsockets_server_eventloop.c	/^static lws_server_context_t *prepare_server(lws_server_evloop_t *p_evloop,$/;"	f	file:
+prepare_working_threads	back/libwebsockets_server_eventloop.c	/^static int32_t prepare_working_threads(lws_server_evloop_t *p_evloop, $/;"	f	file:
+prepare_working_threads	libwebsockets_server_eventloop.c	/^static int32_t prepare_working_threads(lws_server_evloop_t *p_evloop,$/;"	f	file:
+protocol_context	back/libwebsockets_server_eventloop.c	/^    protocol_context_t protocol_context;$/;"	m	struct:lws_server_evloop	file:
+protocol_context	back/libwebsockets_server_eventloop.c	/^typedef struct protocol_context$/;"	s	file:
+protocol_context	libwebsockets_server_eventloop.c	/^    protocol_context_t protocol_context;$/;"	m	struct:lws_server_evloop	file:
+protocol_context	libwebsockets_server_eventloop.c	/^typedef struct protocol_context$/;"	s	file:
+protocol_context_t	back/libwebsockets_server_eventloop.c	/^}protocol_context_t;$/;"	t	typeref:struct:protocol_context	file:
+protocol_context_t	libwebsockets_server_eventloop.c	/^}protocol_context_t;$/;"	t	typeref:struct:protocol_context	file:
+protocol_extensions	back/libwebsockets_server_eventloop.c	/^static const lws_protocol_extension_t protocol_extensions[] = $/;"	v	file:
+protocol_extensions	libwebsockets_server_eventloop.c	/^static const lws_protocol_extension_t protocol_extensions[] =$/;"	v	file:
+protocol_group	back/libwebsockets_server_eventloop.h	/^    lws_protocol_group_t protocol_group;$/;"	m	struct:lws_server_evloop_info
+protocol_group	libwebsockets_server_eventloop.h	/^    lws_protocol_group_t protocol_group;$/;"	m	struct:lws_server_evloop_info
+queue_ele	back/ipc_server.cpp	/^	queue_ele()$/;"	f	struct:queue_ele
+queue_ele	back/ipc_server.cpp	/^typedef struct queue_ele$/;"	s	file:
+queue_ele_t	back/ipc_server.cpp	/^}queue_ele_t;$/;"	t	typeref:struct:queue_ele	file:
+raw_socket_protocols	back/libwebsockets_server_eventloop.c	/^static struct lws_protocols raw_socket_protocols[] = {$/;"	v	typeref:struct:lws_protocols	file:
+raw_socket_protocols	libwebsockets_server_eventloop.c	/^static struct lws_protocols raw_socket_protocols[] = {$/;"	v	typeref:struct:lws_protocols	file:
+reason_bf	back/libwebsockets_server_eventloop.c	/^    int reason_bf;$/;"	m	struct:per_session_data__http	file:
+reason_bf	back/server_http.c	/^	int reason_bf;$/;"	m	struct:per_session_data__http	file:
+reason_bf	libwebsockets_server_eventloop.c	/^    int reason_bf;$/;"	m	struct:per_session_data__http	file:
+reason_bf	server_http.c	/^	int reason_bf;$/;"	m	struct:per_session_data__http	file:
+receive_data	back/libwebsockets_server_eventloop.c	/^static int32_t receive_data(lws_connection_t *p_connection, $/;"	f	file:
+receive_data	libwebsockets_server_eventloop.c	/^static int32_t receive_data(lws_connection_t *p_connection,$/;"	f	file:
+release_msg	back/ipc_server.h	/^		release_msg_cbk_t release_msg;$/;"	m	struct:io_params::sync_params_t
+release_msg	back/ipc_server.h	/^	release_msg_cbk_t release_msg;$/;"	m	struct:response_data
+release_msg_cbk_t	back/ipc_server.h	/^typedef void(*release_msg_cbk_t)(IN IRpcMessage* msg);$/;"	t
+reset_data_sending_state	back/libwebsockets_server_eventloop.c	/^static bool reset_data_sending_state(lws_server_evloop_t *p_evloop)$/;"	f	file:
+reset_data_sending_state	libwebsockets_server_eventloop.c	/^static bool reset_data_sending_state(lws_server_evloop_t *p_evloop)$/;"	f	file:
+resource_path	back/libwebsockets_server_eventloop.c	/^const char *resource_path = LOCAL_RESOURCE_PATH;$/;"	v
+resource_path	libwebsockets_server_eventloop.c	/^const char *resource_path = LOCAL_RESOURCE_PATH;$/;"	v
+response_data	back/ipc_server.h	/^typedef struct response_data$/;"	s
+response_data_t	back/ipc_server.h	/^}response_data_t;$/;"	t	typeref:struct:response_data
+result	back/libwebsockets_server_eventloop.c	/^    char result[500 + LWS_PRE];$/;"	m	struct:per_session_data__http	file:
+result	back/server_http.c	/^	char result[500 + LWS_PRE];$/;"	m	struct:per_session_data__http	file:
+result	libwebsockets_server_eventloop.c	/^    char result[500 + LWS_PRE];$/;"	m	struct:per_session_data__http	file:
+result	server_http.c	/^	char result[500 + LWS_PRE];$/;"	m	struct:per_session_data__http	file:
+result_len	back/libwebsockets_server_eventloop.c	/^    int result_len;$/;"	m	struct:per_session_data__http	file:
+result_len	back/server_http.c	/^	int result_len;$/;"	m	struct:per_session_data__http	file:
+result_len	libwebsockets_server_eventloop.c	/^    int result_len;$/;"	m	struct:per_session_data__http	file:
+result_len	server_http.c	/^	int result_len;$/;"	m	struct:per_session_data__http	file:
+run_evloop	back/ipc_server.cpp	/^static lws_server_evloop_t*  run_evloop(lws_server_wt_t *p_wt, callback_t* p_callback,  uint32_t port)$/;"	f	file:
+run_evloop	ipc_server.cpp	/^static lws_server_evloop_t*  run_evloop(lws_server_wt_t *p_wt, callback_t* p_callback,  uint32_t port)$/;"	f	file:
+run_evloop_with_working_thread	back/ipc_server.cpp	/^static lws_server_evloop_t* run_evloop_with_working_thread(uint8_t working_thread_count, uint32_t port, callback_t* p_callback)$/;"	f	file:
+run_evloop_with_working_thread	ipc_server.cpp	/^static lws_server_evloop_t* run_evloop_with_working_thread(uint8_t working_thread_count, uint32_t port, callback_t* p_callback)$/;"	f	file:
+run_evloop_without_working_thread	back/ipc_server.cpp	/^static lws_server_evloop_t* run_evloop_without_working_thread(uint32_t port, callback_t* p_callback)$/;"	f	file:
+run_evloop_without_working_thread	ipc_server.cpp	/^static lws_server_evloop_t* run_evloop_without_working_thread(uint32_t port, callback_t* p_callback)$/;"	f	file:
+run_thread	back/libwebsockets_server_eventloop.c	/^static void *run_thread(void *p_params)$/;"	f	file:
+run_thread	libwebsockets_server_eventloop.c	/^static void *run_thread(void *p_params)$/;"	f	file:
+schedule_thread_data	back/libwebsockets_server_eventloop.c	/^static uint8_t schedule_thread_data(void *p_params, $/;"	f	file:
+schedule_thread_data	libwebsockets_server_eventloop.c	/^static uint8_t schedule_thread_data(void *p_params,$/;"	f	file:
+scheduler_params	back/libwebsockets_server_eventloop.c	/^    td_scheduler_params_t scheduler_params;$/;"	m	struct:protocol_context	file:
+scheduler_params	libwebsockets_server_eventloop.c	/^    td_scheduler_params_t scheduler_params;$/;"	m	struct:protocol_context	file:
+send_data_to_lws	back/libwebsockets_server_eventloop.c	/^static void send_data_to_lws(lws_connection_t *p_connection, $/;"	f	file:
+send_data_to_lws	libwebsockets_server_eventloop.c	/^static void send_data_to_lws(lws_connection_t *p_connection,$/;"	f	file:
+send_data_to_thread	back/libwebsockets_server_eventloop.c	/^static int32_t send_data_to_thread(void *p_params, void *p_data, uint32_t data_length)$/;"	f	file:
+send_data_to_thread	libwebsockets_server_eventloop.c	/^static int32_t send_data_to_thread(void *p_params, void *p_data, uint32_t data_length)$/;"	f	file:
+send_data_to_worker	back/libwebsockets_server_eventloop.c	/^static void send_data_to_worker(protocol_context_t *p_protocol_context, $/;"	f	file:
+send_data_to_worker	libwebsockets_server_eventloop.c	/^static void send_data_to_worker(protocol_context_t *p_protocol_context,$/;"	f	file:
+send_message_to_connection	back/libwebsockets_server_eventloop.c	/^static void send_message_to_connection(conn_shared_state_t *sp_shared_state, message_t *p_message)$/;"	f	file:
+send_message_to_connection	libwebsockets_server_eventloop.c	/^static void send_message_to_connection(conn_shared_state_t *sp_shared_state, message_t *p_message)$/;"	f	file:
+send_message_to_queue	back/libwebsockets_server_eventloop.c	/^static int32_t send_message_to_queue(lws_connection_t *p_connection, message_t *p_message)$/;"	f	file:
+send_message_to_queue	libwebsockets_server_eventloop.c	/^static int32_t send_message_to_queue(lws_connection_t *p_connection, message_t *p_message)$/;"	f	file:
+serveable	back/server_http.c	/^struct serveable {$/;"	s	file:
+serveable	server_http.c	/^struct serveable {$/;"	s	file:
+server_notify_reason	back/libwebsockets_server_module_defines.h	/^typedef enum server_notify_reason$/;"	g
+server_notify_reason	libwebsockets_server_module_defines.h	/^typedef enum server_notify_reason$/;"	g
+server_notify_reason_t	back/libwebsockets_server_module_defines.h	/^}server_notify_reason_t;$/;"	t	typeref:enum:server_notify_reason
+server_notify_reason_t	libwebsockets_server_module_defines.h	/^}server_notify_reason_t;$/;"	t	typeref:enum:server_notify_reason
+set_notify	back/ipc_server.cpp	/^	inline void set_notify(notify_cbk_t notify_cbk)$/;"	f	class:callback
+set_rpcserver	ipc_server.cpp	/^        inline void set_rpcserver(IRpcServer* p_rpcserver)$/;"	f	class:callback
+sighandler	back/libwebsockets_server_eventloop.c	/^void sighandler(int32_t signo, void *p_param_1, void *p_param_2)$/;"	f
+sighandler	libwebsockets_server_eventloop.c	/^void sighandler(int32_t signo, void *p_param_1, void *p_param_2)$/;"	f
+sp_shared_state	back/libwebsockets_server_eventloop.c	/^    conn_shared_state_t *sp_shared_state;$/;"	m	struct:async_message	file:
+sp_shared_state	back/libwebsockets_server_eventloop.c	/^    conn_shared_state_t *sp_shared_state;$/;"	m	struct:lws_connection_state	file:
+sp_shared_state	libwebsockets_server_eventloop.c	/^    conn_shared_state_t *sp_shared_state;$/;"	m	struct:async_message	file:
+sp_shared_state	libwebsockets_server_eventloop.c	/^    conn_shared_state_t *sp_shared_state;$/;"	m	struct:lws_connection_state	file:
+spa	back/libwebsockets_server_eventloop.c	/^    struct lws_spa *spa;$/;"	m	struct:per_session_data__http	typeref:struct:per_session_data__http::lws_spa	file:
+spa	back/server_http.c	/^	struct lws_spa *spa;$/;"	m	struct:per_session_data__http	typeref:struct:per_session_data__http::lws_spa	file:
+spa	libwebsockets_server_eventloop.c	/^    struct lws_spa *spa;$/;"	m	struct:per_session_data__http	typeref:struct:per_session_data__http::lws_spa	file:
+spa	server_http.c	/^	struct lws_spa *spa;$/;"	m	struct:per_session_data__http	typeref:struct:per_session_data__http::lws_spa	file:
+start_ipc_server	back/ipc_server.cpp	/^LIB_PUBLIC ipc_server_t* start_ipc_server(uint32_t wt_count, uint32_t port, notify_cbk_t notify_cbk)$/;"	f
+start_ipc_server	ipc_server.cpp	/^LIB_PUBLIC ipc_server_t* start_ipc_server(uint32_t wt_count, uint32_t port, IRpcServer* p_rpcserver)$/;"	f
+stop	back/libwebsockets_server_eventloop.c	/^    volatile int32_t stop;$/;"	m	struct:lws_server_evloop	file:
+stop	libwebsockets_server_eventloop.c	/^    volatile int32_t stop;$/;"	m	struct:lws_server_evloop	file:
+stop_ipc_server	back/ipc_server.cpp	/^LIB_PUBLIC void stop_ipc_server(ipc_server_t *p_ipc_server)$/;"	f
+stop_ipc_server	ipc_server.cpp	/^LIB_PUBLIC void stop_ipc_server(ipc_server_t *p_ipc_server)$/;"	f
+stop_server_evloop	back/libwebsockets_server_eventloop.c	/^LIB_PUBLIC void stop_server_evloop(lws_server_evloop_t *p_evloop, bool is_by_force)$/;"	f
+stop_server_evloop	libwebsockets_server_eventloop.c	/^LIB_PUBLIC void stop_server_evloop(lws_server_evloop_t *p_evloop, bool is_by_force)$/;"	f
+store_sending_message	back/libwebsockets_server_eventloop.c	/^static int32_t store_sending_message(callback_base *p_callback, $/;"	f	file:
+store_sending_message	libwebsockets_server_eventloop.c	/^static int32_t store_sending_message(callback_base *p_callback,$/;"	f	file:
+sync_flag	back/ipc_server.h	/^	int sync_flag; $/;"	m	struct:io_params
+sync_params	back/ipc_server.h	/^	} sync_params;$/;"	m	struct:io_params	typeref:struct:io_params::sync_params_t
+sync_params_t	back/ipc_server.h	/^	struct sync_params_t $/;"	s	struct:io_params
+sync_request	back/ipc_server.cpp	/^void callback::sync_request(void *p_conn_params,$/;"	f	class:callback
+sync_request	ipc_server.cpp	/^void callback::sync_request(void* p_conn, const char *p_input_data, uint32_t input_data_len)$/;"	f	class:callback
+td_scheduler_params	back/libwebsockets_server_eventloop.c	/^typedef struct td_scheduler_params$/;"	s	file:
+td_scheduler_params	libwebsockets_server_eventloop.c	/^typedef struct td_scheduler_params$/;"	s	file:
+td_scheduler_params_t	back/libwebsockets_server_eventloop.c	/^}td_scheduler_params_t;$/;"	t	typeref:struct:td_scheduler_params	file:
+td_scheduler_params_t	libwebsockets_server_eventloop.c	/^}td_scheduler_params_t;$/;"	t	typeref:struct:td_scheduler_params	file:
+test_server_lock	back/libwebsockets_server_eventloop.c	/^void test_server_lock(struct lws *wsi, void *p_user, int care)$/;"	f
+test_server_lock	libwebsockets_server_eventloop.c	/^void test_server_lock(struct lws *wsi, void *p_user, int care)$/;"	f
+test_server_unlock	back/libwebsockets_server_eventloop.c	/^void test_server_unlock(struct lws *wsi, void *p_user, int care)$/;"	f
+test_server_unlock	libwebsockets_server_eventloop.c	/^void test_server_unlock(struct lws *wsi, void *p_user, int care)$/;"	f
+thread_arg_t	back/ipc_server.cpp	/^}thread_arg_t;$/;"	t	typeref:struct:__anon3	file:
+thread_arg_t	ipc_server.cpp	/^}thread_arg_t;$/;"	t	typeref:struct:__anon4	file:
+thread_context	back/libwebsockets_server_eventloop.c	/^typedef struct thread_context$/;"	s	file:
+thread_context	libwebsockets_server_eventloop.c	/^typedef struct thread_context$/;"	s	file:
+thread_context_count	back/libwebsockets_server_eventloop.c	/^    uint8_t thread_context_count;$/;"	m	struct:protocol_context	file:
+thread_context_count	libwebsockets_server_eventloop.c	/^    uint8_t thread_context_count;$/;"	m	struct:protocol_context	file:
+thread_context_t	back/libwebsockets_server_eventloop.c	/^}thread_context_t;$/;"	t	typeref:struct:thread_context	file:
+thread_context_t	libwebsockets_server_eventloop.c	/^}thread_context_t;$/;"	t	typeref:struct:thread_context	file:
+thread_run_evloop	back/ipc_server.cpp	/^void *thread_run_evloop(void *param)$/;"	f
+thread_run_evloop	ipc_server.cpp	/^void *thread_run_evloop(void *param)$/;"	f
+total_buffer_size	back/libwebsockets_server_eventloop.c	/^    uint32_t total_buffer_size;$/;"	m	struct:protocol_context	file:
+total_buffer_size	libwebsockets_server_eventloop.c	/^    uint32_t total_buffer_size;$/;"	m	struct:protocol_context	file:
+urlpath	back/server_http.c	/^	const char *urlpath;$/;"	m	struct:serveable	file:
+urlpath	server_http.c	/^	const char *urlpath;$/;"	m	struct:serveable	file:
+valid_raw_socket_protocols	back/libwebsockets_server_eventloop.c	/^enum valid_raw_socket_protocols$/;"	g	file:
+valid_raw_socket_protocols	libwebsockets_server_eventloop.c	/^enum valid_raw_socket_protocols$/;"	g	file:
+valid_websockets_protocols	back/libwebsockets_server_eventloop.c	/^enum valid_websockets_protocols$/;"	g	file:
+valid_websockets_protocols	libwebsockets_server_eventloop.c	/^enum valid_websockets_protocols$/;"	g	file:
+websockets_protocols	back/libwebsockets_server_eventloop.c	/^static struct lws_protocols websockets_protocols[] = {$/;"	v	typeref:struct:lws_protocols	file:
+websockets_protocols	libwebsockets_server_eventloop.c	/^static struct lws_protocols websockets_protocols[] = {$/;"	v	typeref:struct:lws_protocols	file:
+working_thread	back/libwebsockets_server_eventloop.h	/^    lws_server_wt_t working_thread;$/;"	m	struct:lws_server_evloop_info
+working_thread	libwebsockets_server_eventloop.h	/^    lws_server_wt_t working_thread;$/;"	m	struct:lws_server_evloop_info
+write_data	back/libwebsockets_server_eventloop.c	/^static int32_t write_data(lws_connection_t *p_connection,$/;"	f	file:
+write_data	libwebsockets_server_eventloop.c	/^static int32_t write_data(lws_connection_t *p_connection,$/;"	f	file:
+wt_params	back/ipc_server.cpp	/^typedef struct wt_params$/;"	s	file:
+wt_params	ipc_server.cpp	/^typedef struct wt_params$/;"	s	file:
+wt_params_t	back/ipc_server.cpp	/^}wt_params_t;$/;"	t	typeref:struct:wt_params	file:
+wt_params_t	back/ipc_server.h	/^typedef struct wt_params wt_params_t;$/;"	t	typeref:struct:wt_params
+wt_params_t	ipc_server.cpp	/^}wt_params_t;$/;"	t	typeref:struct:wt_params	file:
+~ipc_connection_t	ipc_server.cpp	/^    virtual ~ipc_connection_t(){}$/;"	f	class:ipc_connection_t	file:

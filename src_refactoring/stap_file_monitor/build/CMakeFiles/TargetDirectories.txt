@@ -1,0 +1,3 @@
+/home/john/virus_checking_linux_client/src_refactoring/stap_file_monitor/build/CMakeFiles/rebuild_cache.dir
+/home/john/virus_checking_linux_client/src_refactoring/stap_file_monitor/build/CMakeFiles/edit_cache.dir
+/home/john/virus_checking_linux_client/src_refactoring/stap_file_monitor/build/CMakeFiles/file_monitor.dir

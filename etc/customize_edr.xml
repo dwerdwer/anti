@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+
+    <!-- those categories defined in source code -->
+    <categories>
+        <scheduler>0x0</scheduler>
+        <logger>0x1</logger>
+        <center_agent>0x2</center_agent>
+        <ui_agent>0x4</ui_agent>
+        <file_monitor>0x8</file_monitor>
+        <proc_monitor>0x10</proc_monitor>
+        <file_scaner>0x20</file_scaner>
+        <file_reporter>0x40</file_reporter>
+        <rpc_server>0x80</rpc_server>
+        <sysinfo>0x100</sysinfo>
+        <file_digest>0x200</file_digest>
+        <usb_monitor>0x400</usb_monitor>
+        <vc_client>0x800</vc_client>
+        <vc_server>0x1000</vc_server>
+        <rpcsrv>0x4000</rpcsrv>
+        <avx>0x8000</avx>
+        <net_monitor>0x10000</net_monitor>
+        <upgrade>0x20000</upgrade>
+        <others>0x80000000</others>
+    </categories>
+
+    <!-- those commands defined in source code -->
+    <commands>
+        <MSG_TYPE_LOG>MSG_TYPE_LOG</MSG_TYPE_LOG>
+        <MSG_TYPE_MONITOR>MSG_TYPE_MONITOR</MSG_TYPE_MONITOR>
+        <MSG_TYPE_DISCOVERY>MSG_TYPE_DISCOVERY</MSG_TYPE_DISCOVERY>
+        <MSG_TYPE_CENTER_AGENT>MSG_TYPE_CENTER_AGENT</MSG_TYPE_CENTER_AGENT>
+        <MSG_TYPE_REPORTER>MSG_TYPE_REPORTER</MSG_TYPE_REPORTER>
+        <MSG_TYPE_VIRUSSCAN>ScanVirus</MSG_TYPE_VIRUSSCAN>
+        <MSG_TYPE_EDR_SYSINFO>MSG_TYPE_EDR_SYSINFO</MSG_TYPE_EDR_SYSINFO>
+        <MSG_TYPE_USB_STORAGE>MSG_TYPE_USB_STORAGE</MSG_TYPE_USB_STORAGE>
+        <RECEIVE_TOKEN>receive_token</RECEIVE_TOKEN>
+        <CheckByConnection>CheckByConnection</CheckByConnection>
+        <CheckByMD5>CheckByMD5</CheckByMD5>
+        <SetSnapTime>SetSnapTime</SetSnapTime>
+        <antivirus_target>antivirus_target</antivirus_target>
+        <antivirus_result>antivirus_result</antivirus_result>
+        <msg_req_cmd>msg_req_cmd</msg_req_cmd>
+        <msg_result_cmd>msg_result_cmd</msg_result_cmd>
+        <SetActionRule>SetActionRule</SetActionRule>
+        <Notice>Notice</Notice>
+        <Message>Message</Message>
+        <Update>Update</Update>
+        <MESSAGE_TYPE_TOTAL>MESSAGE_TYPE_TOTAL</MESSAGE_TYPE_TOTAL>
+    </commands>
+
+    <modules>
+        <module  path="../lib/liblogger.so" load="yes" category="logger" isolation="no" name="logger">
+			<file_sum>5</file_sum><!--file sum-->
+            <log_path>../log/edr_client_log</log_path> <!--log path-->
+            <file_size_unit_byte>10485760</file_size_unit_byte> <!--file size unit: byte-->
+
+        </module>
+
+        <module name="rpcsrv" path="../lib/librpcsrv.so" load="yes" category="rpcsrv" isolation="yes">
+            <service_port name="service_port">7681</service_port>
+       </module>
+        <module name="avx" path="../lib/libavx.so" load="yes" category="avx" isolation="yes">
+            <center_info>http://192.168.6.9:80/msgmgr/message/</center_info>
+       </module>
+
+        <module name="center_agent" path="../lib/libcenter_agent.so" load="yes" category="center_agent" isolation="yes">
+            <center_info>http://192.168.6.9:80/msgmgr/message/</center_info> <!--host-->
+            <debug_mod>0</debug_mod>
+            <product_id>0</product_id> <!--product id-->
+            <product_os>4</product_os> <!--product os-->
+            <product_runmode>1</product_runmode> <!--product runmode-->
+            <product_type>K_Linux_JM</product_type> <!--product type-->
+            <product_version>2018-02-08</product_version> <!--product version-->
+            <product_version2>2018-11-19</product_version2> <!-- product version2-->
+            <system_version>Centos(64-bit)</system_version>  <!-- system version-->
+        </module>
+
+        <module name="file_monitor" path="../lib/libfile_monitor.so" load="yes" category="file_monitor" isolation="yes">
+            <monitor_path name="monitor_path">/home</monitor_path>
+            <rule>rule:/var/run/linux_client/etc/kv_file_monitor_conf.json</rule>
+        </module>
+
+        <module name="proc_monitor" path="../lib/libproc_monitor_sdk.so" load="no" category="proc_monitor" isolation="yes">
+        </module>
+        <module name="net_monitor" path="../lib/libnet_monitor_sdk.so" load="no" category="net_monitor" isolation="yes">
+        </module>
+
+        <module name="sysinfo" path="../lib/libsysinfo.so" load="no" category="sysinfo" isolation="yes">
+            <center_addr name="center_addr">host:192.168.6.183</center_addr>
+            <center_port name="center_port">port:21</center_port>
+            <sysinfo_delta>sysinfo_delta:3</sysinfo_delta>   <!--unsigned n seconds-->
+            <proc_action_delta>proc_action_delta:30</proc_action_delta>  <!--unsigned n seconds-->
+            <network_delta>network_delta:300</network_delta>  <!--unsigned n milli-seconds-->
+            <file_white>file_white:./FileWhite</file_white>
+            <process_white>process_white:./ProcessWhite</process_white>
+            <module_white>module_white:./ModWhite</module_white>
+            <host_white>host_white:./IPWhite</host_white>
+            <enable_white_list_log>enable_white_list_log:1</enable_white_list_log>
+            <enable_network_log>enable_network_log:1</enable_network_log>
+            <edition>edition:HUAWEI</edition>           <!--EDR, HUAWEI -->
+            <wlist_path>wlist_path:/opt/edr/hostflt.cfg</wlist_path>
+            <rule_path>rule_path:/opt/edr/HWRule.config</rule_path>
+            <zip_path>zip_path:/tmp/edr_zip</zip_path>
+            <machine_code>machine_code:test_machine_code</machine_code>
+            <file_size>file_size:1048576</file_size>
+            <folder_size>folder_size:10485760</folder_size>
+        </module>
+
+        <module name="usb_monitor" path="../lib/libusb_monitor.so" load="no" category="usb_monitor" isolation="yes">
+        </module>
+
+        <module name="upgrade" path="../lib/libupgrade_plugin.so" load="yes" category="upgrade" isolation="yes">
+            <logfile>logfile:/var/run/linux_client/log/linux_client_upgrade.log</logfile>
+            <upgrade_daemon_script>upgrade_daemon_script:./upgrade_daemon.sh</upgrade_daemon_script>
+            <upgrade_viruslib_script>upgrade_viruslib_script:./upgrade_viruslib.sh</upgrade_viruslib_script>
+            <upgrade_daemon_viruslib_script>upgrade_daemon_viruslib_script:./upgrade_daemon_viruslib.sh</upgrade_daemon_viruslib_script>
+            <daemon_package>daemon_package:http://192.168.6.9:80/update/virus_checking_linux_client.tar.gz</daemon_package>
+            <viruslib_package>viruslib_package:http://192.168.6.9:80/update/virus_library.tar.gz</viruslib_package>
+            <version_file_local>version_file_local:../etc/version.txt</version_file_local>
+            <version_file_url>version_file_url:http://192.168.6.9:80/update/version.txt</version_file_url>
+            <download_version_file_script>download_version_file_script:./download_upgrade_version_file.sh</download_version_file_script>
+            <version_file_download>version_file_download:/tmp/version.txt</version_file_download>
+        </module>
+
+    </modules>
+
+
+    <messages>
+        <message from="scheduler|MSG_TYPE_LOG" to="logger" broadcast="no"/>
+
+        <message from="sysinfo|MSG_TYPE_LOG" to="logger" broadcast="no"/>
+
+        <message from="upgrade|MSG_TYPE_LOG" to="logger" broadcast="no"/>
+        <message from="upgrade|msg_result_cmd" to="rpcsrv" broadcast="no"/>
+        <message from="upgrade|CENTER_MESSAGE_VIRUS_LIB_DATE" to="center_agent" broadcast="no"/>
+
+        <message from="center_agent|MSG_TYPE_REPORTER" to="file_reporter" broadcast="yes"/>
+        <message from="center_agent|MSG_TYPE_LOG" to="logger" broadcast="no"/>
+        <message from="center_agent|RECEIVE_TOKEN" to="sysinfo" broadcast="yes"/>
+        <message from="center_agent|CheckByConnection" to="sysinfo" broadcast="yes"/>
+        <message from="center_agent|CheckByMD5" to="sysinfo" broadcast="yes"/>
+        <message from="center_agent|SetSnapTime" to="sysinfo" broadcast="yes"/>
+        <message from="center_agent|SetActionRule" to="sysinfo" broadcast="yes"/>
+        <message from="center_agent|Notice" to="rpcsrv" broadcast="yes"/>
+        <message from="center_agent|Message" to="rpcsrv" broadcast="yes"/>
+        <message from="center_agent|Update" to="upgrade" broadcast="no"/>
+        <message from="center_agent|MSG_TYPE_VIRUSSCAN" to="avx" broadcast="yes"/>
+        <message from="center_agent|RECEIVE_TOKEN" to="avx" broadcast="yes"/>
+        <message from="center_agent|Monitor" to="file_monitor" broadcast="no"/>
+
+
+        <message from="file_monitor|MSG_TYPE_LOG" to="logger" broadcast="no"/>
+        <message from="file_monitor|MSG_TYPE_VIRUSSCAN" to="sysinfo" broadcast="yes"/>
+        <message from="file_monitor|MSG_TYPE_AVSCAN" to="sysinfo" broadcast="yes"/>
+
+        <message from="usb_monitor|MSG_TYPE_EDR_SYSINFO" to="sysinfo" broadcast="yes"/>
+        <message from="usb_monitor|MSG_TYPE_LOG" to="logger" broadcast="no"/>
+
+        <message from="rpcsrv|antivirus_target" to="avx" broadcast="no"/>
+        <message from="rpcsrv|msg_req_cmd" to="file_monitor" broadcast="yes"/>
+        <message from="rpcsrv|msg_req_cmd" to="net_monitor" broadcast="yes"/>
+        <message from="rpcsrv|msg_req_cmd" to="proc_monitor" broadcast="yes"/>
+        <message from="rpcsrv|msg_req_cmd" to="center_agent" broadcast="yes"/>
+        <message from="rpcsrv|msg_req_cmd" to="upgrade" broadcast="yes"/>
+        <message from="rpcsrv|MSG_TYPE_LOG" to="logger" broadcast="no"/>
+
+        <message from="file_monitor|msg_result_cmd" to="rpcsrv" broadcast="no"/>
+        <message from="net_monitor|msg_result_cmd" to="rpcsrv" broadcast="no"/>
+        <message from="proc_monitor|msg_result_cmd" to="rpcsrv" broadcast="no"/>
+
+        <message from="avx|antivirus_result" to="rpcsrv" broadcast="no"/>
+
+    </messages>
+
+</root>
+

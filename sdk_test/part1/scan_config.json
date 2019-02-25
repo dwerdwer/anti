@@ -1,0 +1,59 @@
+{
+        "run_daemon_script": "/home/zen/work_dir/project/06_kv_linux_sdk_test/outputfiles/linux_kv_sdk_test/scripts/run_daemon.sh", 
+        "restart_script": "/home/zen/work_dir/project/06_kv_linux_sdk_test/outputfiles/linux_kv_sdk_test/scripts/restart_daemon.sh", 
+        "config_xml": "/home/zen/work_dir/project/06_kv_linux_sdk_test/outputfiles/linux_kv_sdk_test/etc/customize_edr.xml", 
+        "kv_plugin_name": "sysinfo", 
+        "run_modify_load": "/home/zen/work_dir/project/06_kv_linux_sdk_test/outputfiles/linux_kv_sdk_test/sdk_executable/run_modify_load", 
+        "scan_path": "/home/zen/work_dir/project/06_kv_linux_sdk_test/outputfiles/linux_kv_sdk_test/sdk_scan_path", 
+        "special_scan_path": "/home/zen/work_dir/project/06_kv_linux_sdk_test/outputfiles/linux_kv_sdk_test/sdk_special_scan_path", 
+        "scan_option": "Unzip", 
+        "log_method": "0", 
+        "chapter_1": {
+                "1": "修改配置文件不挂载杀毒引擎插件；重启Daemon；调用av_sdk_init，返回NULL。", 
+                "2": "修改配置文件挂载杀毒引擎插件；重启Daemon；调用av_sdk_init获得指针；以此指针调用av_sdk_uninit，返回1。", 
+                "3": "用空指针调用av_sdk_uninit，程序崩溃。"
+        }, 
+        "chapter_1_count": "3", 
+        "chapter_2": {
+                "1": "以ptr_sdk为空指针调用av_scan_target，程序崩溃。", 
+                "2": "以uint32_option为0而其它参数正常调用av_scan_target，返回0。", 
+                "3": "以ptr_path为NULL而其它参数正常调用av_scan_target，返回0。", 
+                "4": "以ptr_notify为NULL而其它参数正常调用av_scan_target，返回1。", 
+                "5": "以ptr_param为NULL而其它参数正常调用av_scan_target，返回1。", 
+                "6": "以所有参数正常时调用av_scan_target，返回1。", 
+                "7": "以所有参数正常时调用av_scan_target，返回1；触发回调函数，回调函数的ptr_param参数和av_scan_target传入的相等。", 
+                "8": "以所有参数正常时调用av_scan_target，返回1；触发回调函数，回调函数的file参数不为NULL。", 
+                "9": "以所有参数正常时调用av_scan_target，返回1；触发回调函数，回调函数的flag参数不为0时，description参数不为NULL。"
+        }, 
+        "chapter_2_count": "9", 
+        "chapter_3": {
+                "1": "以空指针调用av_sdk_stop，程序崩溃。", 
+                "2": "以空指针调用av_sdk_pause，程序崩溃。", 
+                "3": "以空指针调用av_sdk_resume，程序崩溃。", 
+                "4": "重启Daemon；在未调用av_scan_target时，以正常参数调用av_sdk_stop，返回0。", 
+                "5": "重启Daemon；在未调用av_scan_target时，以正常参数调用av_sdk_pause，返回0。", 
+                "6": "重启Daemon；在未调用av_scan_target时，以正常参数调用av_sdk_resume，返回0。", 
+                "7": "以正常参数调用av_scan_target；在确认扫描结束之后，以正常参数调用av_sdk_stop，返回0。", 
+                "8": "以正常参数调用av_scan_target；在确认扫描结束之后，以正常参数调用av_sdk_pause，返回0。", 
+                "9": "以正常参数调用av_scan_target；在确认扫描结束之后，以正常参数调用av_sdk_resume，返回0。", 
+                "10": "以正常参数调用av_scan_target扫描含有两个以上文件的目录，在第一次触发回调函数时，在回调函数中以正常参数调用av_sdk_stop，返回1。且后续不再有回调函数触发。", 
+                "11": "以正常参数调用av_scan_target扫描含有两个以上文件的目录，在第一次触发回调函数时，在回调函数中以正常参数调用av_sdk_pause，返回1；第一次回调结束后，后续不再有回调函数触发；以正常参数调用av_sdk_resume，后续有回调函数触发，且后续回调函数触发的总个数等于文件个数减1。", 
+                "12": "以正常参数调用av_scan_target；在确认扫描结束之前，在回调函数之外，以正常参数调用av_sdk_stop，返回1；后续不再有回调函数触发。", 
+                "13": "以正常参数调用av_scan_target；在确认扫描结束之后，在回调函数之外，以正常参数调用av_sdk_pause，返回1；后续不再有回调函数触发；以正常参数调用av_sdk_resume，后续有回调函数触发，且总回调函数个数等于文件个数。"
+        }, 
+        "chapter_3_count": "13", 
+        "chapter_4": {
+                "1": "以ptr_sdk为空指针调用av_list_file_in_quarantine，程序崩溃。", 
+                "2": "以ptr_sdk为空指针调用av_restore_file，程序崩溃。", 
+                "3": "以ptr_notify为空指针其它参数正常调用av_list_file_in_quarantine，返回0。", 
+                "4": "以ptr_name为空指针其它参数正常调用av_restore_file，返回0。", 
+                "5": "以所有参数正常时调用av_list_file_in_quarantine，返回1。", 
+                "6": "以所有参数正常时调用av_restore_file，返回1。", 
+                "7": "调用av_scan_target扫描一个病毒文件，保证有文件被隔离；以所有参数正常时调用av_list_file_in_quarantine，返回1；触发ListNotify回调函数时，函数参数file_old、file_new、sha不为空，size参数不为0。", 
+                "8": "调用av_scan_target扫描一个病毒文件，保证有文件被隔离；以所有参数正常时调用av_list_file_in_quarantine，返回1；触发ListNotify回调函数时，如果file_old指向的文件不存在，以正常参数调用av_restore_file，返回1。确认file_old指向的文件存在。", 
+                "9": "调用av_scan_target扫描一个病毒文件，保证有文件被隔离；以所有参数正常时调用av_list_file_in_quarantine，返回1；触发ListNotify回调函数时，如果file_old指向的文件不存在，获取file_new；以获取的file_new为参数，其它参数正常调用av_restore_file，返回1。确认file_old指向的文件存在。", 
+                "10": "调用av_scan_target扫描一个病毒文件，保证有文件被隔离；以所有参数正常时调用av_list_file_in_quarantine，返回1；触发ListNotify回调函数时，如果file_old指向的文件存在，以file_new为参数，其它参数正常调用av_restore_file，返回1。确认file_old指向的文件已经被覆盖（修改日期）。"
+        }, 
+        "chapter_4_count": "10", 
+        "chapter_count": "4"
+}

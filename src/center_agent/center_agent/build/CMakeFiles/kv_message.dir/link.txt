@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkv_message.a  CMakeFiles/kv_message.dir/home/john/virus_checking_linux_client/src/center_agent/kv_message/src/KVMessage.cpp.o CMakeFiles/kv_message.dir/home/john/virus_checking_linux_client/src/center_agent/kv_message/src/KVMessage.pb.cc.o CMakeFiles/kv_message.dir/home/john/virus_checking_linux_client/src/center_agent/kv_message/src/Utils.cpp.o
+/usr/bin/ranlib libkv_message.a

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -g -Wall -fPIC -fvisibility=hidden -Wno-unused -Wno-deprecated-declarations -L../../../lib  -shared -Wl,-soname,librpcsrv.so -o librpcsrv.so CMakeFiles/rpcsrv.dir/implements.cxx.o -lipc_server -lrpc_message -lprotobuf-lite -lmodule_data 

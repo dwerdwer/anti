@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <modules>
+        <module name="ui_agent" path="../lib/libui_agent.so" load="no" category="ui_agent" isolation="no">
+            <param_1 name="commun_object">temp</param_1>
+        </module>
+        <module name="file_monitor" path="../lib/libfile_monitor.so" load="yes" category="file_monitor" isolation="yes">
+            <param_1>/home</param_1>
+        </module>
+        <module name="usb_monitor" path="../lib/libusb_monitor.so" load="yes" category="usb_monitor" isolation="yes" />
+    </modules>
+</root>

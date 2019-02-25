@@ -1,0 +1,149 @@
+// -----------------------------------------------------------------
+// | Operating System | Syscalls |           Feature               |
+// |---------------------------------------------------------------|
+// |                  | open     | create a file                   |
+// |                  |--------------------------------------------|
+// |                  | mkdir    | create a directory              |
+// |                  |--------------------------------------------|
+// |                  | rename   | move a file to another file     |
+// |                  |--------------------------------------------|
+// |     CentOS 7     | fchmodat | change file mode                |
+// |                  |--------------------------------------------|
+// |                  | fchownat | change file owner               |
+// |                  |--------------------------------------------|
+// |                  |  unlink  |                                 |
+// |                  |----------|  remove a file or a directory   |
+// |                  | unlinkat |                                 |
+// |---------------------------------------------------------------|
+// |                  |          |                                 |
+// |                  |          |                                 |
+// |                  |          |                                 |
+// |                  |          |                                 |
+// |                  |          |                                 |
+// |                  |          |                                 |
+// |---------------------------------------------------------------|
+// |                  |          |                                 |
+// -----------------------------------------------------------------
+
+
+
+// 'touch', 'cp', 'vim'
+probe my_syscall.open
+{
+    printf ("%10d %5d %5d %s \"%s\" %s\n", 
+            gettimeofday_s(), ppid(), pid(), filename, env_var("PWD"), name)
+}
+
+probe my_syscall.creat
+{
+    printf ("%10d %5d %5d %s \"%s\" %s\n", 
+            gettimeofday_s(), ppid(), pid(), pathname, env_var("PWD"), name)
+}
+
+// 'chmod'
+// probe syscall.chmod
+// {
+//     printf ("%10d %5d %5d %s \"%s\" %s\n", 
+//             gettimeofday_s(), ppid(), pid(), path, env_var("PWD"), name)
+//     // printf ("%5d %10s (%s) arg(%s) %s\n", pid(), name, path, argstr, execname())
+// }
+// probe syscall.fchmod
+// {
+//     // printf ("%5d %10s (%d) arg(%s) %s\n", pid(), name, fildes, argstr, execname())
+// }
+// probe syscall.fchmodat
+// {
+//     printf ("%10d %5d %5d %s \"%s\" %s\n", 
+//             gettimeofday_s(), ppid(), pid(), pathname, env_var("PWD"), name)
+//     // printf ("%5d %10s (%s) arg(%s) %s\n", pid(), name, pathname, argstr, execname())
+// }
+
+// 'mkdir'
+probe my_syscall.mkdir
+{
+    printf ("%10d %5d %5d %s \"%s\" %s\n", 
+            gettimeofday_s(), ppid(), pid(), pathname, env_var("PWD"), name)
+}
+
+// 'rm', 'mv'
+probe my_syscall.unlink
+{
+    printf ("%10d %5d %5d %s \"%s\" %s\n", 
+            gettimeofday_s(), ppid(), pid(), pathname, env_var("PWD"), name)
+}
+
+probe my_syscall.unlinkat
+{
+    printf ("%10d %5d %5d %s \"%s\" %s\n", 
+            gettimeofday_s(), ppid(), pid(), pathname_str, env_var("PWD"), name)
+}
+
+probe my_syscall.rmdir
+{
+    printf ("%10d %5d %5d %s \"%s\" %s\n", 
+            gettimeofday_s(), ppid(), pid(), pathname, env_var("PWD"), name)
+}
+
+// 'chown'
+// probe syscall.chown
+// {
+//     printf ("%10d %5d %5d %s \"%s\" %s\n", 
+//             gettimeofday_s(), ppid(), pid(), path, env_var("PWD"), name)
+//     // printf ("%5d %10s (%s) arg(%s) %s\n", pid(), name, path, argstr, execname())
+// }
+// probe syscall.chown16
+// {
+//     printf ("%10d %5d %5d %s \"%s\" %s\n", 
+//             gettimeofday_s(), ppid(), pid(), path, env_var("PWD"), name)
+//     // printf ("%5d %10s (%s) arg(%s) %s\n", pid(), name, path, argstr, execname())
+// }
+// probe syscall.lchown
+// {
+//     printf ("%10d %5d %5d %s \"%s\" %s\n", 
+//             gettimeofday_s(), ppid(), pid(), path, env_var("PWD"), name)
+//     // printf ("%5d %10s (%s) arg(%s) %s\n", pid(), name, path, argstr, execname())
+// }
+// probe syscall.lchown16
+// {
+//     printf ("%10d %5d %5d %s \"%s\" %s\n", 
+//             gettimeofday_s(), ppid(), pid(), path, env_var("PWD"), name)
+//     // printf ("%5d %10s (%s) arg(%s) %s\n", pid(), name, path, argstr, execname())
+// }
+// probe syscall.fchown
+// {
+//     // printf ("%5d %10s (%d) arg(%s) %s\n", pid(), name, fd, argstr, execname())
+// }
+// probe syscall.fchown16
+// {
+//     // printf ("%5d %10s (%d) arg(%s) %s\n", pid(), name, fd, argstr, execname())
+// }
+// probe syscall.fchownat
+// {
+//     printf ("%10d %5d %5d %s \"%s\" %s\n", 
+//             gettimeofday_s(), ppid(), pid(), pathname, env_var("PWD"), name)
+//     // printf ("%5d %10s (%s) arg(%s) %s\n", pid(), name, pathname, argstr, execname())
+// }
+
+// 'mv'
+probe nd_syscall.rename
+{
+    printf ("%10d %5d %5d %s \"%s\" %s\n", 
+            gettimeofday_s(), ppid(), pid(), newpath, env_var("PWD"), name)
+}
+
+// probe syscall.chdir
+// {
+//     printf ("%10d %5d %5d %s \"%s\" %s\n", 
+//             gettimeofday_s(), ppid(), pid(), path, env_var("PWD"), name)
+//     printf ("%5d %10s (%s) arg(%s) %s\n", pid(), name, path, argstr, execname())
+// }
+
+// probe begin
+// {
+//     printf("begin\n")
+// }
+// 
+// probe end
+// {
+//     printf("end\n")
+// }

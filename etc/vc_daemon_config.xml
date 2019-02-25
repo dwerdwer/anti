@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modules>
+    <module name="cbd_scheduler" path="../lib/libcbd_scheduler.so">
+        <param_1>../etc/customize_edr.xml</param_1>  <!-- 调度模块配置文件路径 -->
+    </module>
+</modules>
+

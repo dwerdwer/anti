@@ -1,0 +1,3 @@
+/home/john/virus_checking_linux_client/src/scheduler/build/CMakeFiles/rebuild_cache.dir
+/home/john/virus_checking_linux_client/src/scheduler/build/CMakeFiles/edit_cache.dir
+/home/john/virus_checking_linux_client/src/scheduler/build/CMakeFiles/cbd_scheduler.dir
